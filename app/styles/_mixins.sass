@@ -1,0 +1,89 @@
+@mixin borderH
+	border-bottom: 1px solid $lyellow
+	border-top: 1px solid $earth
+	height: 0
+	width: 100%
+
+
+
+
+
+@mixin borderV
+	border-right: 1px solid $lyellow
+	border-left: 1px solid $earth
+	width: 0
+	height: 100%
+@mixin texto($font, $size, $color)
+	font-family: $font
+	font-size: $size
+	color: $color
+	margin: 0
+
+@mixin scale($x, $y)
+	transform: scale($x,$y)
+	-ms-transform: scale($x,$y)
+	-webkit-transform: scale($x,$y)
+
+@mixin shadow($x, $y, $blur, $color)
+	text-shadow: $x $y $blur $color
+	filter: Shadow(Color=$color, Direction=130, Strength=1)
+@mixin shadow2($x, $y, $blur, $color, $x2, $y2, $blur2, $color2)
+	text-shadow: $x $y $blur $color, $x2 $y2 $blur2 $color2
+	filter: Shadow(Color=$color, Direction=130, Strength=1)
+
+@mixin boxshadow($x, $y, $blur, $color)
+	-webkit-filter: drop-shadow($x $y $blur $color)
+	// filter: url(#drop-shadow);
+	// -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12,
+	// Color='#444')";
+	// filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12,
+	// Color='#444')";
+@mixin filterS($x, $y, $blur, $color)
+	-moz-box-shadow: $x $y $blur $color
+	-webkit-box-shadow: $x $y $blur $color
+	box-shadow: $x $y $blur $color
+
+@mixin img($url, $w, $h)
+	background:  url($url) 0 0 no-repeat
+	width: $w
+	height: $h
+
+@mixin transition($prop)
+	-moz-transition: $prop 0.4s
+	-webkit-transition: $prop 0.4s
+	-o-transition: $prop 0.4s
+	transition: $prop 0.4s
+	-webkit-backface-visibility: hidden
+@mixin transitionT($prop, $time, $easing)
+	-moz-transition: $prop $time
+	-webkit-transition: $prop $time
+	-o-transition: $prop $time
+	transition: $prop $time
+	-webkit-backface-visibility: hidden
+	transition-timing-function: $easing
+	-webkit-transition-timing-function: $easing
+
+@mixin noselect
+	-webkit-touch-callout: none
+	-webkit-user-select: none
+	-khtml-user-select: none
+	-moz-user-select: none
+	-ms-user-select: none
+	user-select: none
+
+@mixin grayscale
+	// filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale")/* Firefox 10+ */
+	filter: gray/* IE6-9 */
+	-webkit-filter: grayscale(100%) /* Chrome 19+ & Safari 6+ */
+	-webkit-transition: all 0.2s ease
+	&:hover
+		// filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale")
+		-webkit-filter: grayscale(0%)
+	&.active
+		// filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale")
+		-webkit-filter: grayscale(0%)
+
+@mixin scale($x, $y)
+	transform: scale($x,$y)
+	-ms-transform: scale($x,$y) /* IE 9 */
+	-webkit-transform: scale($x,$y)/* Safari and Chrome */

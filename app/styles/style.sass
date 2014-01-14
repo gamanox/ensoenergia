@@ -1,0 +1,366 @@
+@import "reset"
+@import "colors"
+@import "fonts"
+@import "mixins"
+
+
+
+p
+	margin: 0
+	padding: 0
+html, body
+	overflow: hidden
+	margin: 0
+	padding: 0
+	height: 100%
+	width: 100%
+	background-color: $learth
+.bgshadow
+	background: url("../img/bgshadow.png") 50% 0% no-repeat
+	top: 0
+	left: 0
+	position: fixed
+	z-index: 1
+	width: 100%
+	height: 100%
+	pointer-events: none
+
+.header
+	position: fixed
+	width: 100%
+	height: 100px
+	z-index: 10
+	top: 0
+	left: 0
+	background-image: url("../img/logo.png")
+	background-position: bottom left
+	background-repeat: no-repeat
+	background-color: $yellow
+	.logo
+		width: 401px
+		height: 100px
+		cursor: pointer
+		position: absolute
+		top: 0
+		left: 0
+		display: block
+	.socialMenu
+		width: 255px
+		height: 100px
+		float: right
+		margin-right: 120px
+	.solid
+		height: 10px
+		width: 100%
+		background: #000
+		opacity: 0.05
+		position: absolute
+		bottom: -10px
+	.borderL
+		@include borderV
+		float: right
+	.element
+		width: 30px
+		height: 35px
+		margin-top: 30px
+		float: left
+		cursor: pointer
+		position: relative
+		margin-right: 20px
+
+		p
+			display: none
+			text-align: center
+			padding-top: 0px
+			position: absolute
+			bottom: -20px
+
+
+		&.fb
+			background: url("../img/menu/social_media_v2.png") no-repeat -10px 0
+			p
+				margin-left: -12px
+		&.tw
+			background: url("../img/menu/social_media_v2.png") no-repeat -60px 0
+			p
+				margin-left: -5px
+		&.in
+			background: url("../img/menu/social_media_v2.png") no-repeat -113px 0
+			p
+				margin-left: -14px
+		&.map
+			background: url("../img/menu/social_media_v2.png") no-repeat -170px 0
+			p
+				margin-left: -23px
+		&.tel
+			background: url("../img/menu/social_media_v2.png") no-repeat -220px 0
+			p
+				width: 85px
+				margin-left: -25px
+		&.mail
+			display: none
+			width: 35px
+			background: url("../img/menu/social_media_v2.png") no-repeat -280px 0
+			p
+				margin-left: -5px
+				width: 50px
+
+
+		&:hover
+
+			p
+				display: block
+		p
+			@include texto($hregular, 8px, $dearth)
+			letter-spacing: 3px
+			text-align: center
+			padding-top: 77px
+
+
+
+
+	.borderB
+		position: absolute
+		bottom: 0px
+		left: 0
+		@include borderH
+
+.container
+	width: 100%
+	// height: auto
+	// margin-top: 100px
+	// margin-bottom: 30px
+	overflow: auto
+	position: absolute
+	top: 100px
+	left: 0
+	// background: -webkit-linear-gradient(left, #f9a735, #e37e25)
+	background-color: #f9a735
+	#map
+		#mapa
+			width: 100%
+			height: 100%
+		.address
+			width: 575px
+			height: 77px
+			position: absolute
+			left: 50%
+			bottom: 100px
+			background: url("../img/address.png") 0 0 no-repeat
+			margin-left: -287.5px
+			z-index: 1
+	.seccion
+		position: relative
+		display: block
+		float: left
+		width: 100%
+		height: 100%
+		.seccionCont
+			width: 700px
+			margin-left: auto
+			margin-right: auto
+			padding-top: 50px
+			height: 100%
+			&.proyectosCont
+				margin-left: 135px
+
+	#intro
+		.introCont
+			position: relative
+
+			p.tituloSeccion
+				width: 100%
+				text-align: center
+				position: absolute
+				top: 50%
+				@include texto($hbold, 92px, #fff)
+				// @include shadow2(0px,1px,0px, #e0e0df,0px,-1px, 0px,#bdbdbc)
+				font-weight: 700
+				margin-top: -100px
+			p.descripcion
+				position: absolute
+				width: 400px
+				top: 52%
+				text-align: right
+				left: 226px
+				@include texto($hregular, 18px, #545455)
+				line-height: 24px
+
+
+	#cotizador
+		.cotizadorCont
+			margin-left: 135px
+			p.tituloSeccion
+				@include texto($hbold, 48px, #0dbe8e)
+				@include shadow2(1px,1px,0px, #6ce0c1,-1px,-1px, 0px,#0fb387)
+				font-weight: 700
+				padding-top: 115px
+
+	#blog
+		.blogCont
+			margin-left: 135px
+			p.tituloSeccion
+				@include texto($hbold, 48px, #edc91a)
+				@include shadow2(1px,1px,0px, #f9e279,-1px,-1px, 0px,#e0be1b)
+				font-weight: 700
+				padding-top: 222px
+
+	#productos
+		.productosCont
+			margin-left: 135px
+			p.tituloSeccion
+				@include texto($hbold, 48px, #84afb2)
+				@include shadow2(1px,1px,0px, #c2d7da,-1px,-1px, 0px,#7ea6a9)
+				font-weight: 700
+				padding-top: 9px
+
+	#proyectos
+		.proyectosCont
+			margin-left: 135px
+			p.tituloSeccion
+				@include texto($hbold, 48px, #3e5d7d)
+				@include shadow2(1px,1px,0px, #8191a3,-1px,-1px, 0px,#3c5977)
+				font-weight: 700
+				padding-top: 329px
+	#contacto
+		.contactoCont
+			width: 955px
+			margin-left: 160px
+			p.tituloSeccion
+				@include texto($hbold, 58px, #c8c7c7)
+				@include shadow2(1px,1px,0px, #e0e0df,-1px,-1px, 0px,#bdbdbc)
+				font-weight: 700
+
+			.izqCont
+				width: 440px
+				float: left
+				display: block
+				p.descripCont
+					@include texto($hregular, 17px, $dgrey)
+					line-height: 36px
+					margin-top: 35px
+					margin-left: 10px
+			.derCont
+				// padding-top: 35px
+				width: 515px
+				float: left
+				display: block
+				.campo
+					&.textfield
+						height: 115px
+					width: 100%
+					height: 42px
+					p.campoTexto
+						@include texto($hregular, 17px, $dgrey)
+						text-align: right
+						float: right
+
+					.inputContacto
+						border: none
+						background-color: #B7B7B7
+						float: right
+						height: 25px
+						width: 355px
+						margin-left: 15px
+						padding: 0
+					.inputComent
+						height: 115px
+				.enviar
+					width: 60px
+					height: 10px
+					padding-left: 15px
+					padding-right: 15px
+					padding-top: 7px
+					padding-bottom: 10px
+					float: right
+					background-color: #f09029
+					margin-top: 25px
+					p
+						@include texto($hregular, 14px, #fff)
+						text-align: center
+						letter-spacing: 1px
+
+
+
+
+
+
+
+.footer
+	width: 100%
+	height: 30px
+	position: fixed
+	bottom: 0
+	left: 0
+	background-color: $yellow
+	.borderT
+		position: absolute
+		left: 0
+		top: 0
+		@include borderH
+
+
+
+.menuMain
+	position: fixed
+	width: 106px
+	//height: 400px
+	left: 25px
+	top: 140px
+	z-index: 10
+	.link
+		width: 106px
+		height: 87px
+		margin-bottom: 20px
+		cursor: pointer
+		&.menu01
+			background: url("../img/menu/menu_v3_01.png") 50% 50% no-repeat
+		&.menu02
+			background: url("../img/menu/menu_v3_02.png") 50% 50% no-repeat
+		&.menu03
+			background: url("../img/menu/menu_v3_03.png") 50% 50% no-repeat
+		&.menu04
+			background: url("../img/menu/menu_v3_04.png") 50% 50% no-repeat
+		&.menu05
+			background: url("../img/menu/menu_v3_05.png") 50% 50% no-repeat
+
+
+
+.derecha
+	background: url("http://cl.ly/image/0y0s3h2L3q1E/derecha.png")
+	width: 24px
+	height: 45px
+	position: absolute
+	top: 50%
+	right: 30px
+	margin-top: -22px
+	cursor: pointer
+	z-index: 10
+.izquierda
+	background: url("http://cl.ly/image/2w281J3s0c3K/izquierda.png")
+	width: 24px
+	height: 45px
+	position: absolute
+	top: 50%
+	left: 30px
+	margin-top: -22px
+	cursor: pointer
+	z-index: 10
+.container
+	position: relative
+	width: 100%
+	height: 100%
+
+	.svg
+		top: 240px
+		left: 500px
+		width: 1975px
+		height: 908px
+		position: absolute
+		z-index: 1
+		background: url("https://dl.dropboxusercontent.com/s/3syj5c0gdhbu96h/intro.png") no-repeat 0 0
+
+
+
+
+
