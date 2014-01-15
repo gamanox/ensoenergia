@@ -60,7 +60,32 @@ html(ng-app="enso")
       #cotizador.seccion
         .cotizadorCont.seccionCont
           p.tituloSeccion
-            | Próximamente
+            | Cotizador
+          p.subtituloSeccion
+            | Cotiza tu recibo de luz
+          .izqCont
+            .campo
+              input.inputContacto(name='nombre', type='text')
+              p.campoTexto
+                | Nómbre
+            .campo
+              input.inputContacto(name='email', type='email')
+              p.campoTexto
+                | E-mail
+            .campo
+              input.inputContacto(name='telefono', type='tel')
+              p.campoTexto
+                | Teléfono
+            .campo
+              input.inputContacto(name='compania', type='text')
+              p.campoTexto
+                | Compañia
+            
+            a.enviar(href='#')
+              p
+                | Enviar
+          .derCont
+            img(src="/img/cotizador/recibo.png", alt="")
       #blog.seccion
         .blogCont.seccionCont
           p.tituloSeccion
