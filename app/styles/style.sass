@@ -154,7 +154,7 @@ html, body
 		display: block
 		float: left
 		width: 100%
-		height: 100%
+		height: 850px
 		.seccionCont
 			width: 700px
 			margin-left: auto
@@ -259,52 +259,146 @@ html, body
 				padding-top: 222px
 
 	#productos
+		height: 4250px
+		
 		.productosCont
+			width: 90%
 			margin-left: 135px
+			
+
+					
+					
+					
+					
 			p.tituloSeccion
 				@include texto($hbold, 48px, #84afb2)
 				@include shadow2(1px,1px,0px, #c2d7da,-1px,-1px, 0px,#7ea6a9)
 				font-weight: 700
 				padding-top: 9px
 		.productosLinea
-			.celdasObj
-				width: 159px
+			padding-top: 200px
+			width: 800px
+			margin-left: auto
+			margin-right: auto
+			.paso
+				width: 100%
 				height: 159px
+				margin-bottom: 480px
 				position: relative
-				background-position: 50% 50%
-				background-repeat: no-repeat
-				display: block
-				-webkit-transition: all 0.4s ease-in-out
-				-moz-transition: all 0.4s ease-in-out
-				-ms-transition: all 0.4s ease-in-out
-				-o-transition: all 0.4s ease-in-out
-				transition: all 0.4s ease-in-out
-				&:hover
-					-webkit-transform: scale(1.2, 1.2)
-					-moz-transform: scale(1.2, 1.2)
-					-ms-transform: scale(1.2, 1.2)
-					-o-transform: scale(1.2, 1.2)
-					transform: scale(1.2, 1.2)
+				.progressCont
+					
+					width: 905px
+					position: absolute
+					height: 5px
+					background-color: none
+					-webkit-transform-origin: 0% 50%
+					-moz-transform-origin: 0% 50%
+					-ms-transform-origin: 0% 50%
+					-o-transform-origin: 0% 50%
+					transform-origin: 0% 50%
+					.progressBar
+						height: 100%
+						width: 0%
+						background-color: #FFF
+
+					&.prog01
+						top: 80px
+						left: 80px
+						-webkit-transform: rotate(45deg) 
+						-moz-transform: rotate(45deg) 
+						-ms-transform: rotate(45deg) 
+						-o-transform: rotate(45deg) 
+						transform: rotate(45deg) 
+					&.prog02
+						top: 80px
+						left: 721px
+						-webkit-transform: rotate(135deg) 
+						-moz-transform: rotate(135deg) 
+						-ms-transform: rotate(135deg) 
+						-o-transform: rotate(135deg) 
+						transform: rotate(135deg) 
+					&.prog03
+						top: 80px
+						left: 80px
+						-webkit-transform: rotate(45deg) 
+						-moz-transform: rotate(45deg) 
+						-ms-transform: rotate(45deg) 
+						-o-transform: rotate(45deg) 
+						transform: rotate(45deg) 
+					&.prog04
+						top: 80px
+						left: 721px
+						-webkit-transform: rotate(135deg) 
+						-moz-transform: rotate(135deg) 
+						-ms-transform: rotate(135deg) 
+						-o-transform: rotate(135deg) 
+						transform: rotate(135deg) 
+					&.prog05
+						top: 80px
+						left: 80px
+						-webkit-transform: rotate(45deg) 
+						-moz-transform: rotate(45deg) 
+						-ms-transform: rotate(45deg) 
+						-o-transform: rotate(45deg) 
+						transform: rotate(45deg) 
+					&.prog06
+						top: 80px
+						left: 721px
+						-webkit-transform: rotate(135deg) 
+						-moz-transform: rotate(135deg) 
+						-ms-transform: rotate(135deg) 
+						-o-transform: rotate(135deg) 
+						transform: rotate(135deg) 
+				.celdasObj
+					width: 159px
+					height: 159px
+					position: relative
+					//margin-top: 35%
+					//margin-bottom: 350px
+					
+					&.right
+						float: right
+						margin-left: auto
+						margin-right: 0
+					&.left
+						float: left
+						margin-right: auto
+						
+						margin-left: 0
+					background-position: 50% 50%
+					background-repeat: no-repeat
+					display: block
 					-webkit-transition: all 0.4s ease-in-out
 					-moz-transition: all 0.4s ease-in-out
 					-ms-transition: all 0.4s ease-in-out
 					-o-transition: all 0.4s ease-in-out
 					transition: all 0.4s ease-in-out
+					&:hover
+						-webkit-transform: scale(1.2, 1.2)
+						-moz-transform: scale(1.2, 1.2)
+						-ms-transform: scale(1.2, 1.2)
+						-o-transform: scale(1.2, 1.2)
+						transform: scale(1.2, 1.2)
+						-webkit-transition: all 0.4s ease-in-out
+						-moz-transition: all 0.4s ease-in-out
+						-ms-transition: all 0.4s ease-in-out
+						-o-transition: all 0.4s ease-in-out
+						transition: all 0.4s ease-in-out
+					
+				.celdas01
+					background-image: url("/img/ciclo/ciclo_energia_solar01.png")	
+				.celdas02
+					background-image: url("/img/ciclo/ciclo_energia_solar02.png")	
+				.celdas03
+					background-image: url("/img/ciclo/ciclo_energia_solar03.png")	
+				.celdas04
+					background-image: url("/img/ciclo/ciclo_energia_solar04.png")	
+				.celdas05
+					background-image: url("/img/ciclo/ciclo_energia_solar05.png")	
+				.celdas06
+					background-image: url("/img/ciclo/ciclo_energia_solar06.png")
+			
 				
-			.celdas01
-				background-image: url("/img/ciclo/ciclo_energia_solar01.png")	
-			.celdas02
-				background-image: url("/img/ciclo/ciclo_energia_solar02.png")	
-			.celdas03
-				background-image: url("/img/ciclo/ciclo_energia_solar03.png")	
-			.celdas04
-				background-image: url("/img/ciclo/ciclo_energia_solar04.png")	
-			.celdas05
-				background-image: url("/img/ciclo/ciclo_energia_solar05.png")	
-			.celdas06
-				background-image: url("/img/ciclo/ciclo_energia_solar06.png")
-
-
 	#proyectos
 		.proyectosCont
 			margin-left: 135px
