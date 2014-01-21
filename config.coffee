@@ -57,3 +57,5 @@ exports.config =
   plugins:
     jade:
       pretty: yes
+    coffeescript:
+      bare: true

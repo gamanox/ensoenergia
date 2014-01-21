@@ -1,5 +1,5 @@
 wHeight = $(window).height()
-
+map = undefined
 
 resize = ->
 	$(".container").height wHeight-130
@@ -89,7 +89,7 @@ initialize = ->
     	map: map
     	icon: "img/pin.png"
 
-map = undefined
+
 google.maps.event.addDomListener window, "load", initialize
 
 
