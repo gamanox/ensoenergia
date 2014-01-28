@@ -16,29 +16,30 @@ html(ng-app="enso")
     link(href='http://fonts.googleapis.com/css?family=PT+Sans:400,700', rel='stylesheet')
   body
     .header
-      a.logo.scrollTo(href='#intro')
-      .socialMenu
-        a.element.fb(href='https://www.facebook.com/pages/ENSO-Energ%C3%ADa-Solar/515080675254619', target='_blank')
-          p
-            | FACEBOOK
-        .element.tw
-          p
-            | TWITTER
-        .element.in
-          p
-            | INSTAGRAM
-        a.element.map.scrollTo(bgcolor='', href='#map')
-          p
-            | UBICACIÓN
-        .element.tel
-          p
-            | 871 713-8642
-        a.element.mail(href='mailto:contacto@ensoenergia.com', target='_blank')
-          p
-            | E-MAIL
-      
-         .borderB 
-      .solid
+      .contenedor
+        a.logo.scrollTo(href='#intro')
+        .socialMenu
+          a.element.fb(href='https://www.facebook.com/pages/ENSO-Energ%C3%ADa-Solar/515080675254619', target='_blank')
+            p
+              | FACEBOOK
+          .element.tw
+            p
+              | TWITTER
+          .element.in
+            p
+              | INSTAGRAM
+          a.element.map.scrollTo(bgcolor='', href='#map')
+            p
+              | UBICACIÓN
+          .element.tel
+            p
+              | 871 713-8642
+          a.element.mail(href='mailto:contacto@ensoenergia.com', target='_blank')
+            p
+              | E-MAIL
+        
+           .borderB 
+        .solid
     #mainCont.container
       .menuMain
         .link.menu01.scrollTo.productos(bgcolor='#f9a735', href='#productos')
@@ -65,6 +66,8 @@ html(ng-app="enso")
               .progressCont.prog01
                 .progressBar
               .celdasObj.left.celdas01
+              p.tituloProducto
+              
             .paso.paso02
               .progressCont.prog02
                 .progressBar
@@ -82,7 +85,7 @@ html(ng-app="enso")
                 .progressBar
               .celdasObj.left.celdas05
             .paso.paso06
-              
+
               .celdasObj.right.celdas06
       #cotizador.seccion
         .cotizadorCont.seccionCont
