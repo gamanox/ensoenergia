@@ -15,151 +15,62 @@ html(ng-app="enso")
     
     link(href='http://fonts.googleapis.com/css?family=PT+Sans:400,700', rel='stylesheet')
   body
-    .header
-      .contenedor
-        a.logo.scrollTo(href='#intro')
-        .socialMenu
-          a.element.fb(href='https://www.facebook.com/pages/ENSO-Energ%C3%ADa-Solar/515080675254619', target='_blank')
-            p
-              | FACEBOOK
-          .element.tw
-            p
-              | TWITTER
-          .element.in
-            p
-              | INSTAGRAM
-          a.element.map.scrollTo(bgcolor='', href='#map')
-            p
-              | UBICACIÓN
-          .element.tel
-            p
-              | 871 713-8642
-          a.element.mail(href='mailto:contacto@ensoenergia.com', target='_blank')
-            p
-              | E-MAIL
-        
-           .borderB 
-        .solid
-    #mainCont.container
-      .menuMain
-        .link.menu01.scrollTo.productos(bgcolor='#f9a735', href='#productos')
-        .link.menu02.scrollTo.cotizador(bgcolor='#11bf90', href='#cotizador')
-        .link.menu03.scrollTo.blog(bgcolor='#f6d024', href='#blog')
-        .link.menu04.scrollTo.proyectos(href='#proyectos')
-        .link.menu05.scrollTo.contacto(bgcolor='#cdcdcc', href='#contacto')
-      .bgshadow
-      #intro.seccion
-        .introCont.seccionCont
-          p.tituloSeccion
-            | Energía Solar
-          p.descripcion
-            | Empresa mexicana fundada en la ciudad de Torreón Coahuila en el año 2013.
-      #productos.seccion
-        .productosCont.seccionCont
+    
+    .section#intro
+      .bg
+      .logo
+        .img
+          img(src="img/logo2.png", alt="")
+        p
+          | ENERGIA SOLAR
+      a.goDown.scrollTo(href="#panelesBg")
+    .section#paneles
+      .wrap
+        p.title
+          | PANELES SOLARES
+        p.paragraph
+          | Sistemas de generación de electricidad con paneles solares para casas, comercios e industria (Sistemas Eléctricos Fotovoltaicos).
 
-          p.tituloSeccion
-            | Productos
-          .productosLinea
-            
-            
-            .paso.paso01
-              .progressCont.prog01
-                .progressBar
-              .celdasObj.left.celdas01
-              p.tituloProducto
-              
-            .paso.paso02
-              .progressCont.prog02
-                .progressBar
-              .celdasObj.right.celdas02
-            .paso.paso03
-              .progressCont.prog03
-                .progressBar
-              .celdasObj.left.celdas03
-            .paso.paso04
-              .progressCont.prog04
-                .progressBar
-              .celdasObj.right.celdas04
-            .paso.paso05
-              .progressCont.prog05
-                .progressBar
-              .celdasObj.left.celdas05
-            .paso.paso06
+    .section#panelesBg
+      .bg
+      .wrap
+        p.title
+          | PANELES SOLARES
+        p.paragraph
+          | Sistemas de generación de electricidad con paneles solares para casas, comercios e industria (Sistemas Eléctricos Fotovoltaicos).
+      a.goUp.scrollTo(href="#intro")
+      a.goDown.scrollTo(href="#calentadores")
+    
+    .section#calentadores
+      .bg
+      .wrap
+        p.title
+          | CALENTADORES SOLARES
+        p.paragraph
+          | Calentadores solares de agua para casas (boilers solares), comercios e industria (Sistemas Termo Solares).
 
-              .celdasObj.right.celdas06
-      #cotizador.seccion
-        .cotizadorCont.seccionCont
-          p.tituloSeccion
-            | Cotizador
-          p.subtituloSeccion
-            | Cotiza tu recibo de luz
-          .izqCont
-            .campo
-              input.inputContacto(name='nombre', type='text')
-              p.campoTexto
-                | Nómbre
-            .campo
-              input.inputContacto(name='email', type='email')
-              p.campoTexto
-                | E-mail
-            .campo
-              input.inputContacto(name='telefono', type='tel')
-              p.campoTexto
-                | Teléfono
-            .campo
-              input.inputContacto(name='compania', type='text')
-              p.campoTexto
-                | Compañia
-            
-            a.enviar(href='#')
-              p
-                | Enviar
-          .derCont
-            img(src="/img/cotizador/recibo.png", alt="")
-      #blog.seccion
-        .blogCont.seccionCont
-          p.tituloSeccion
-            | Próximamente
-      #proyectos.seccion
-        .proyectosCont.seccionCont
-          p.tituloSeccion
-            | Próximamente
-      #contacto.seccion
-        .contactoCont.seccionCont
-          p.tituloSeccion
-            | Contáctanos
-          .izqCont
-            p.descripCont
-              | Puedes contactarnos directamente o llenar la forma con tus preguntas o inquietudes y nosotros te responderemos inmediatamente.
-          .derCont
-            .campo
-              input.inputContacto(name='nombre', type='text')
-              p.campoTexto
-                | Nómbre
-            .campo
-              input.inputContacto(name='email', type='email')
-              p.campoTexto
-                | E-mail
-            .campo
-              input.inputContacto(name='telefono', type='tel')
-              p.campoTexto
-                | Teléfono
-            .campo
-              input.inputContacto(name='compania', type='text')
-              p.campoTexto
-                | Compañia
-            .campo.textfield
-              textarea.inputContacto.inputComent(name='comentario')
-              p.campoTexto
-                | Comentario
-            a.enviar(href='#')
-              p
-                | Enviar
-      #map.seccion
-        #mapa
-        .address
-    .footer
-      .borderT
+      a.goUp.scrollTo(href="#panelesBg")
+      a.goDown.scrollTo(href="#cotizador")
+    
+    .section#cotizador
+      .bg
+      .wrap
+        p.title
+          | CALCULA TU AHORRO
+        p.paragraph
+          | Calcula el ahorro que podrías tener con un sistema de energía solar.
+      a.goUp.scrollTo(href="#calentadores")
+      a.goDown.scrollTo(href="#map")
+    .section#map
+      #mapa
+      .wrap
+        p.title
+          | UBICACIÓN
+        p.paragraph
+          | Blvd. Independencia #123 Ote. Local 2 <br> C.P. 27140 <br> Torreón, Coah. México.
+      
+      
+
   //
     script(src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js')
     script(src='js/jquery.color.js')

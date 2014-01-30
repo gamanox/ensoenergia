@@ -1,31 +1,7 @@
 wHeight = $(window).height()
 map = undefined
 
-resize = ->
-	$(".container").height wHeight-130
 
-aniColors = ->
-	#sHeight = $(".seccion").height()
-	sHeight = 850
-	$(".container").attr("data-0", "background-color:rgb(247,170,4);")
-	$(".container").attr("data-#{sHeight*1}", "background-color:rgb(153,189,192);")
-	$(".container").attr("data-#{sHeight*5.2}", "background-color:rgb(153,189,192);")
-	$("#productos .prog01 .progressBar").attr("data-#{sHeight*1}", "width: 0%;")
-	$("#productos .prog01 .progressBar").attr("data-#{sHeight*1.75}", "width: 100%;")
-	$("#productos .prog02 .progressBar").attr("data-#{sHeight*1.75}", "width: 0%;")
-	$("#productos .prog02 .progressBar").attr("data-#{sHeight*2.5}", "width: 100%;")
-	$("#productos .prog03 .progressBar").attr("data-#{sHeight*2.5}", "width: 0%;")
-	$("#productos .prog03 .progressBar").attr("data-#{sHeight*3.25}", "width: 100%;")
-	$("#productos .prog04 .progressBar").attr("data-#{sHeight*3.25}", "width: 0%;")
-	$("#productos .prog04 .progressBar").attr("data-#{sHeight*4}", "width: 100%;")
-	$("#productos .prog05 .progressBar").attr("data-#{sHeight*4}", "width: 0%;")
-	$("#productos .prog05 .progressBar").attr("data-#{sHeight*4.75}", "width: 100%;")
-	#$("#productos .prog06 .progressBar").attr("data-#{sHeight*4.75}", "width: 0%;")
-	#$("#productos .prog06 .progressBar").attr("data-#{sHeight*5.5}", "width: 100%;")
-	$(".container").attr("data-#{sHeight*6}", "background-color:rgb(15,206,154);")
-	$(".container").attr("data-#{sHeight*7}", "background-color:rgb(246,208,36);")
-	$(".container").attr("data-#{sHeight*8}", "background-color:rgb(48,74,100);")
-	$(".container").attr("data-#{sHeight*9}", "background-color:rgb(205,205,204);")
 
 initialize = ->
 	mapOptions =
@@ -112,7 +88,7 @@ navigation = (currentSection)->
 
 	nextSection = currentSection.attr "href"
 	nextColor = currentSection.attr "bgcolor"
-	$(".container").scrollTo($(nextSection), 600, {easing:"easeOutQuad"})
+	$.scrollTo($(nextSection), 600, {easing:"easeOutQuad"})
 	# if nextColor isnt ""
 	# 	$(".container").animate
 	# 		backgroundColor: nextColor
@@ -121,13 +97,10 @@ navigation = (currentSection)->
 
 
 $ ->
-	resize()
-	aniColors()
+	
 	$(".scrollTo").on "click", (e)->
 		e.preventDefault()
 		navigation($(this))
-	skrollr.init()
+	
 
 
-$(window).resize ->
-	resize()
