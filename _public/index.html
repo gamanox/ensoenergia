@@ -16,45 +16,107 @@
     <link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
   </head>
   <body>
+    <div class="main_nav">
+      <div class="nav_logo"><a href="/"><img src="img/menu/logo_small.png" alt="" width="40" height="39"></a></div>
+      <div class="nav_icon"><a href="#"><img src="img/menu/menu.svg" alt="" width="41" height="40"></a></div>
+      <div class="nav_close"><a href="#"><img src="img/menu/close.svg" alt="" width="36" height="40"></a></div>
+    </div>
+    <div class="main_nav_menu">
+      <div class="menu_item"><a href="#intro" class="scrollTo">INICIO </a></div>
+      <div class="menu_item"><a href="#paneles" class="scrollTo">NOSOTROS </a></div>
+      <div class="menu_item"><a href="#productos" class="scrollTo">PRODUCTOS </a></div>
+      <div class="menu_item"><a href="#ahorro" class="scrollTo">AHORRA </a></div>
+      <div class="menu_item"><a href="#map" class="scrollTo">UBICACIÓN </a></div>
+      <div class="menu_item"><a href="#contactanos" class="scrollTo">CONTACTO  </a></div>
+    </div>
     <div id="intro" class="section">
       <div class="bg"></div>
       <div class="logo">
         <div class="img"><img src="img/logo2.png" alt=""></div>
         <p>ENERGIA SOLAR</p>
-      </div><a href="#panelesBg" class="goDown scrollTo"></a>
+      </div><a href="#paneles" class="goDown scrollTo"></a>
     </div>
     <div id="paneles" class="section">
       <div class="wrap">
-        <p class="title">PANELES SOLARES</p>
-        <p class="paragraph">Sistemas de generación de electricidad con paneles solares para casas, comercios e industria (Sistemas Eléctricos Fotovoltaicos).</p>
+        <p class="title">NOSOTROS</p>
+        <hr>
+        <p class="paragraph">Enso Energía es una empresa mexicana fundada en la ciudad de Torreón Coahuila en el año 2013. Nos dedicamos a la comercialización e instalación de sistemas de generación de energía renovable, principalmente a través de la energía solar. Somos especialistas en proyectos de generación de energía eléctrica a través de paneles solares (energía solar fotovoltaica) y en el diseño y comercialización de equipos de calentamiento solar de agua (energía solar térmica).</p>
       </div>
     </div>
     <div id="panelesBg" class="section">
       <div class="bg"></div>
       <div class="wrap">
-        <p class="title">PANELES SOLARES</p>
-        <p class="paragraph">Sistemas de generación de electricidad con paneles solares para casas, comercios e industria (Sistemas Eléctricos Fotovoltaicos).</p>
-      </div><a href="#intro" class="goUp scrollTo"></a><a href="#calentadores" class="goDown scrollTo"></a>
+      </div>
+    </div>
+    <div id="productos" class="section">
+      <div class="wrap">
+        <p class="title">PRODUCTOS</p>
+        <hr>
+        <div class="services_sect1"><img src="img/menu/menu_v2_01.png" height="92">
+          <h3>PÁNELES</h3>
+          <p class="paragraph">Sistemas de generación de electricidad con paneles solares para casas, comercios e industria (Sistemas Eléctricos Fotovoltaicos).</p>
+        </div>
+        <div class="services_sect2"><img src="img/menu/menu_v2_03.png" height="92">
+          <h3>CALENTADORES</h3>
+          <p class="paragraph">Calentadores solares de agua para casas (boilers solares), comercios e industria (Sistemas Termo Solares).</p>
+        </div>
+      </div>
     </div>
     <div id="calentadores" class="section">
       <div class="bg"></div>
       <div class="wrap">
-        <p class="title">CALENTADORES SOLARES</p>
-        <p class="paragraph">Calentadores solares de agua para casas (boilers solares), comercios e industria (Sistemas Termo Solares).</p>
-      </div><a href="#panelesBg" class="goUp scrollTo"></a><a href="#cotizador" class="goDown scrollTo"></a>
+      </div>
     </div>
-    <div id="cotizador" class="section">
-      <div class="bg"></div>
+    <div id="ahorro" class="section">
       <div class="wrap">
         <p class="title">CALCULA TU AHORRO</p>
-        <p class="paragraph">Calcula el ahorro que podrías tener con un sistema de energía solar.</p>
-      </div><a href="#calentadores" class="goUp scrollTo"></a><a href="#map" class="goDown scrollTo"></a>
+        <hr>
+        <p class="paragraph">Calcula el ahorro que podrías tener con un sistema de energía solar. Consulta tu consumo diario en tu recibo de luz.</p>
+        <form name="projectplanner" method="post" id="projectplanner" action="php/submit.php">
+          <div class="floating-placeholder">
+            <input id="name" name="name" type="text">
+            <label for="name">Nombre / Compañía</label>
+          </div>
+          <div class="floating-placeholder">
+            <input id="phone" name="phone" type="integer">
+            <label for="phone">Teléfono</label>
+          </div>
+          <div class="floating-placeholder">
+            <input id="email" name="email" type="text">
+            <label for="email">Email</label>
+          </div>
+          <div class="floating-placeholder">
+            <input id="city" name="city" type="text">
+            <label for="city">Ciudad</label>
+          </div>
+          <div class="floating-placeholder">
+            <input id="consumo" name="consumo" type="text">
+            <label for="consumo">Consumo diario kW/h</label>
+          </div>
+        </form>
+        <div style="padding-top: 20px;">
+          <center>
+            <div class="send_btn"><a href="javascript:document.getElementById('projectplanner').submit();">ENVIAR</a></div>
+          </center>
+        </div>
+      </div>
     </div>
     <div id="map" class="section">
       <div id="mapa"></div>
+    </div>
+    <div id="ubicacion" class="section">
       <div class="wrap">
         <p class="title">UBICACIÓN</p>
+        <hr>
         <p class="paragraph">Blvd. Independencia #123 Ote. Local 2 <br> C.P. 27140 <br> Torreón, Coah. México.</p>
+      </div>
+    </div>
+    <div id="contactanos" class="section">
+      <div class="bg"></div>
+      <div class="wrap">
+        <p class="title">CONTACTO</p>
+        <hr>
+        <p class="paragraph"></p>
       </div>
     </div>
   </body>

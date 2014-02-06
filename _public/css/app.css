@@ -82,20 +82,98 @@ html, body {
   padding: 0;
   max-height: 100%;
   width: 100%;
-  height: 100%;
-  min-width: 1100px; }
+  height: 100%; }
 
 @media -sass-debug-info{filename{}line{font-family:\0000319}}
 body {
   display: block; }
 
 @media -sass-debug-info{filename{}line{font-family:\0000322}}
+.main_nav {
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  height: 80px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.74);
+  opacity: 0;
+  text-align: center; }
+@media -sass-debug-info{filename{}line{font-family:\0000331}}
+  .main_nav .nav_logo {
+    margin-left: 0%;
+    text-align: left;
+    width: 25%;
+    float: left;
+    padding-top: 20px;
+    padding-left: 24px; }
+@media -sass-debug-info{filename{}line{font-family:\0000338}}
+  .main_nav .nav_icon {
+    margin-right: 0%;
+    text-align: right;
+    padding-top: 20px;
+    width: 25%;
+    float: right;
+    padding-right: 29px; }
+@media -sass-debug-info{filename{}line{font-family:\0000345}}
+  .main_nav .nav_close {
+    margin-right: 0%;
+    text-align: right;
+    padding-top: 20px;
+    width: 25%;
+    float: right;
+    padding-right: 29px;
+    display: none; }
+
+@media -sass-debug-info{filename{}line{font-family:\0000354}}
+.main_nav_menu {
+  position: fixed;
+  z-index: 999;
+  margin-right: 0%;
+  text-align: right;
+  margin-top: 80px;
+  width: 200px;
+  height: 100%;
+  right: 0;
+  padding-right: 30px;
+  background-color: rgba(0, 0, 0, 0.7);
+  line-height: 62px;
+  color: white;
+  font-size: 26px;
+  font-weight: 200;
+  display: none; }
+@media -sass-debug-info{filename{}line{font-family:\0000371}}
+  .main_nav_menu .menu_item {
+    width: 200px;
+    height: 62px;
+    outline: 0px solid white;
+    padding-right: 30px;
+    background-color: rgba(0, 0, 0, 0);
+    letter-spacing: 3px; }
+@media -sass-debug-info{filename{}line{font-family:\0000380}}
+    .main_nav_menu .menu_item a {
+      text-align: right;
+      text-decoration: none;
+      color: white;
+      width: 200px;
+      height: 62px;
+      display: block;
+      padding-right: 30px;
+      font-family: "Light";
+      -webkit-transition: background-color 0.22s ease-in-out;
+      -moz-transition: background-color 0.22s ease-in-out;
+      -ms-transition: background-color 0.22s ease-in-out;
+      -o-transition: background-color 0.22s ease-in-out;
+      transition: background-color 0.22s ease-in-out; }
+@media -sass-debug-info{filename{}line{font-family:\0000394}}
+      .main_nav_menu .menu_item a:hover {
+        background-color: rgba(0, 0, 0, 0.7); }
+
+@media -sass-debug-info{filename{}line{font-family:\0000398}}
 .section {
-  height: 400px;
   display: block;
   position: relative;
   width: 100%; }
-@media -sass-debug-info{filename{}line{font-family:\0000327}}
+@media -sass-debug-info{filename{}line{font-family:\00003103}}
   .section .goDown {
     cursor: url(../img/down.cur), url(../img/down.png), pointer;
     width: 100%;
@@ -104,7 +182,7 @@ body {
     position: absolute;
     z-index: 1;
     left: 0; }
-@media -sass-debug-info{filename{}line{font-family:\0000335}}
+@media -sass-debug-info{filename{}line{font-family:\00003111}}
   .section .goUp {
     cursor: url(../img/up.cur), url(../img/up.png), pointer;
     width: 100%;
@@ -113,32 +191,39 @@ body {
     position: absolute;
     z-index: 1;
     left: 0; }
-@media -sass-debug-info{filename{}line{font-family:\0000343}}
+@media -sass-debug-info{filename{}line{font-family:\00003119}}
   .section .wrap {
-    width: 700px;
-    padding: 40px 0px;
+    width: 90%;
+    padding: 58px 0px;
+    padding-bottom: 68px;
     margin-left: auto;
     margin-right: auto;
     position: relative; }
-@media -sass-debug-info{filename{}line{font-family:\0000350}}
+@media -sass-debug-info{filename{}line{font-family:\00003127}}
     .section .wrap p.title {
-      font-family: "Bold";
-      font-size: 52px;
+      font-family: "Regular";
+      font-size: 22px;
       color: #3a4145;
-      margin-bottom: 30px; }
-@media -sass-debug-info{filename{}line{font-family:\0000354}}
+      text-align: center;
+      margin-bottom: 20px;
+      letter-spacing: 4px; }
+@media -sass-debug-info{filename{}line{font-family:\00003132}}
+    .section .wrap hr {
+      width: 100px;
+      height: 2px;
+      border: none;
+      background-color: #fda817;
+      margin-bottom: 68px; }
+@media -sass-debug-info{filename{}line{font-family:\00003140}}
     .section .wrap p.paragraph {
       font-family: "Regular";
-      font-size: 20px;
+      font-size: 18px;
       color: #3a4145;
-      text-align: left;
-      line-height: 32px; }
+      text-align: center;
+      line-height: 40px;
+      letter-spacing: 1px; }
 
-@media -sass-debug-info{filename{}line{font-family:\0000358}}
-#paneles {
-  display: none; }
-
-@media -sass-debug-info{filename{}line{font-family:\0000361}}
+@media -sass-debug-info{filename{}line{font-family:\00003148}}
 #intro {
   position: relative;
   width: 100%;
@@ -149,7 +234,7 @@ body {
   padding: 15% 0;
   height: 100%;
   margin-bottom: 0rem; }
-@media -sass-debug-info{filename{}line{font-family:\0000372}}
+@media -sass-debug-info{filename{}line{font-family:\00003159}}
   #intro .bg {
     width: 100%;
     height: 100%;
@@ -161,13 +246,13 @@ body {
     position: absolute;
     top: 0;
     left: 0; }
-@media -sass-debug-info{filename{}line{font-family:\0000383}}
+@media -sass-debug-info{filename{}line{font-family:\00003170}}
   #intro .logo {
     display: table-cell;
     vertical-align: middle;
     width: 293px;
     position: relative; }
-@media -sass-debug-info{filename{}line{font-family:\0000389}}
+@media -sass-debug-info{filename{}line{font-family:\00003176}}
     #intro .logo p {
       margin-top: 18px;
       font-family: "Light";
@@ -176,7 +261,7 @@ body {
       text-align: center;
       letter-spacing: 14px; }
 
-@media -sass-debug-info{filename{}line{font-family:\0000396}}
+@media -sass-debug-info{filename{}line{font-family:\00003183}}
 #panelesBg {
   position: relative;
   width: 100%;
@@ -187,7 +272,7 @@ body {
   padding: 15% 0;
   height: 100%;
   margin-bottom: 0rem; }
-@media -sass-debug-info{filename{}line{font-family:\00003107}}
+@media -sass-debug-info{filename{}line{font-family:\00003194}}
   #panelesBg .bg {
     width: 100%;
     height: 100%;
@@ -199,11 +284,121 @@ body {
     position: absolute;
     top: 0;
     left: 0; }
-@media -sass-debug-info{filename{}line{font-family:\00003118}}
+@media -sass-debug-info{filename{}line{font-family:\00003205}}
   #panelesBg p {
     color: white; }
 
-@media -sass-debug-info{filename{}line{font-family:\00003120}}
+@media -sass-debug-info{filename{}line{font-family:\00003208}}
+#ahorro form {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  border: 1px solid #e0e0e0;
+  font-weight: 300;
+  margin-top: 60px;
+  font-family: "Regular"; }
+@media -sass-debug-info{filename{}line{font-family:\00003217}}
+#ahorro input, #ahorro .floating-placeholder {
+  font-size: 19px;
+  line-height: 62px;
+  height: 80px;
+  margin: 0;
+  width: 100%; }
+@media -sass-debug-info{filename{}line{font-family:\00003223}}
+#ahorro .floating-placeholder input:focus + label {
+  color: #fda817; }
+@media -sass-debug-info{filename{}line{font-family:\00003225}}
+#ahorro .floating-placeholder input[value] + label {
+  color: red; }
+@media -sass-debug-info{filename{}line{font-family:\00003227}}
+#ahorro .floating-placeholder {
+  position: relative; }
+@media -sass-debug-info{filename{}line{font-family:\00003229}}
+#ahorro .floating-placeholder input {
+  font-size: 26px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  border: none;
+  outline: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  background: transparent;
+  z-index: 2;
+  border-bottom: 1px solid #e0e0e0;
+  text-indent: 20px;
+  color: #3a4145;
+  font-family: "Regular"; }
+@media -sass-debug-info{filename{}line{font-family:\00003245}}
+#ahorro .floating-placeholder:last-child input {
+  border-bottom: none; }
+@media -sass-debug-info{filename{}line{font-family:\00003247}}
+#ahorro .floating-placeholder label {
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 22px;
+  letter-spacing: 1px;
+  font-size: 22px;
+  z-index: 1;
+  -webkit-transform-origin: 0 -1.25em;
+  -moz-transform-origin: 0 0em;
+  -ms-transform-origin: 0 0em;
+  -o-transform-origin: 0 0em;
+  transform-origin: 0 -1.25em;
+  -webkit-transition: -webkit-transform 160ms, color 220ms;
+  -moz-transition: -moz-transform 160ms, color 220ms;
+  -o-transition: -o-transform 160ms, color 220ms;
+  transition: transform 160ms, color 220ms;
+  -webkit-transform: scale(1, 1) rotateY(0);
+  -moz-transform: scale(1, 1) rotateY(0);
+  -ms-transform: scale(1, 1) rotateY(0);
+  -o-transform: scale(1, 1) rotateY(0);
+  transform: scale(1, 1) rotateY(0);
+  color: #888888; }
+@media -sass-debug-info{filename{}line{font-family:\00003272}}
+#ahorro .floating-placeholder-float label {
+  -webkit-transform: scale(0.6, 0.6) rotateY(0);
+  -moz-transform: scale(0.55, 0.55) rotateY(0);
+  -ms-transform: scale(0.55, 0.55) rotateY(0);
+  -o-transform: scale(0.55, 0.55) rotateY(0);
+  transform: scale(0.6, 0.6) rotateY(0); }
+@media -sass-debug-info{filename{}line{font-family:\00003278}}
+#ahorro .floating-placeholder-float input {
+  line-height: 3.4em; }
+@media -sass-debug-info{filename{}line{font-family:\00003281}}
+#ahorro .send_btn {
+  background-color: #fda817;
+  color: white;
+  height: 38px;
+  width: 180px;
+  border: 0;
+  font-size: 17px;
+  letter-spacing: 1px;
+  font-family: "Regular", sans-serif;
+  opacity: 1;
+  margin-top: 54px;
+  margin-bottom: 70px;
+  padding-top: 20px;
+  cursor: pointer;
+  border-radius: 0px;
+  -webkit-transition: opacity 0.22s ease-in-out;
+  -moz-transition: opacity 0.22s ease-in-out;
+  -ms-transition: opacity 0.22s ease-in-out;
+  -o-transition: opacity 0.22s ease-in-out;
+  transition: opacity 0.22s ease-in-out;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateZ(0) scale(1, 1); }
+@media -sass-debug-info{filename{}line{font-family:\00003303}}
+  #ahorro .send_btn a {
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: block; }
+
+@media -sass-debug-info{filename{}line{font-family:\00003310}}
 #calentadores {
   position: relative;
   width: 100%;
@@ -214,7 +409,7 @@ body {
   padding: 15% 0;
   height: 100%;
   margin-bottom: 0rem; }
-@media -sass-debug-info{filename{}line{font-family:\00003131}}
+@media -sass-debug-info{filename{}line{font-family:\00003322}}
   #calentadores .bg {
     width: 100%;
     height: 100%;
@@ -226,47 +421,96 @@ body {
     position: absolute;
     top: 0;
     left: 0; }
-@media -sass-debug-info{filename{}line{font-family:\00003142}}
+@media -sass-debug-info{filename{}line{font-family:\00003333}}
   #calentadores p {
     color: white; }
 
-@media -sass-debug-info{filename{}line{font-family:\00003144}}
-#cotizador {
-  position: relative;
+@media -sass-debug-info{filename{}line{font-family:\00003346}}
+#contactanos .bg {
   width: 100%;
   height: 100%;
-  display: table;
-  box-sizing: border-box;
-  min-height: 240px;
-  padding: 15% 0;
-  height: 100%;
-  margin-bottom: 0rem; }
-@media -sass-debug-info{filename{}line{font-family:\00003155}}
-  #cotizador .bg {
-    width: 100%;
-    height: 100%;
-    background-image: url("../img/medidor01.jpg");
-    background-size: cover;
-    background-position: 50% 50%;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 0;
-    left: 0; }
-@media -sass-debug-info{filename{}line{font-family:\00003166}}
-  #cotizador p {
-    color: white; }
-
-@media -sass-debug-info{filename{}line{font-family:\00003170}}
-#map p {
+  background-image: url("../img/medidor01.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0; }
+@media -sass-debug-info{filename{}line{font-family:\00003357}}
+#contactanos p {
   color: white; }
-@media -sass-debug-info{filename{}line{font-family:\00003172}}
-#map .wrap {
-  pointer-events: none; }
 
-@media -sass-debug-info{filename{}line{font-family:\00003175}}
+@media -sass-debug-info{filename{}line{font-family:\00003361}}
+#productos {
+  text-align: center;
+  font-family: "Regular";
+  color: #3a4145; }
+@media -sass-debug-info{filename{}line{font-family:\00003366}}
+  #productos .wrap {
+    overflow: auto; }
+@media -sass-debug-info{filename{}line{font-family:\00003368}}
+  #productos .paragraph {
+    margin-bottom: 30px; }
+@media -sass-debug-info{filename{}line{font-family:\00003370}}
+  #productos .services_sect1 {
+    position: relative;
+    width: 49%;
+    height: 400px;
+    border-left: 1px solid #e0e0e0;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 0;
+    float: left;
+    margin-left: 0%;
+    display: block; }
+@media -sass-debug-info{filename{}line{font-family:\00003382}}
+    #productos .services_sect1 p {
+      padding-left: 15px;
+      padding-right: 15px;
+      font-size: 17px; }
+@media -sass-debug-info{filename{}line{font-family:\00003386}}
+  #productos .services_sect2 {
+    position: relative;
+    width: 50%;
+    height: 400px;
+    border: 1px solid #e0e0e0;
+    padding: 0;
+    float: left;
+    margin-left: 0%;
+    display: block; }
+@media -sass-debug-info{filename{}line{font-family:\00003395}}
+    #productos .services_sect2 p {
+      padding-left: 15px;
+      padding-right: 15px;
+      font-size: 17px; }
+@media -sass-debug-info{filename{}line{font-family:\00003399}}
+  #productos img {
+    padding-top: 18px; }
+@media -sass-debug-info{filename{}line{font-family:\00003401}}
+  #productos h3 {
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    margin-top: 18px;
+    padding-bottom: 20px;
+    width: 100%;
+    border-bottom: 1px solid #e0e0e0; }
+
+@media -sass-debug-info{filename{}line{font-family:\00003411}}
+#map {
+  height: 400px; }
+@media -sass-debug-info{filename{}line{font-family:\00003413}}
+  #map p {
+    color: white; }
+@media -sass-debug-info{filename{}line{font-family:\00003415}}
+  #map .wrap {
+    pointer-events: none; }
+
+@media -sass-debug-info{filename{}line{font-family:\00003418}}
 #mapa {
-  height: 100%;
+  height: 399px;
   position: absolute !important;
   width: 100%;
   top: 0;

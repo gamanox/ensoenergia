@@ -908,14 +908,29 @@ colors = jQuery.Color.names = {
  * @version 1.4.3.1
  */
 ;(function($){var h=$.scrollTo=function(a,b,c){$(window).scrollTo(a,b,c)};h.defaults={axis:'xy',duration:parseFloat($.fn.jquery)>=1.3?0:1,limit:true};h.window=function(a){return $(window)._scrollable()};$.fn._scrollable=function(){return this.map(function(){var a=this,isWin=!a.nodeName||$.inArray(a.nodeName.toLowerCase(),['iframe','#document','html','body'])!=-1;if(!isWin)return a;var b=(a.contentWindow||a).document||a.ownerDocument||a;return/webkit/i.test(navigator.userAgent)||b.compatMode=='BackCompat'?b.body:b.documentElement})};$.fn.scrollTo=function(e,f,g){if(typeof f=='object'){g=f;f=0}if(typeof g=='function')g={onAfter:g};if(e=='max')e=9e9;g=$.extend({},h.defaults,g);f=f||g.duration;g.queue=g.queue&&g.axis.length>1;if(g.queue)f/=2;g.offset=both(g.offset);g.over=both(g.over);return this._scrollable().each(function(){if(e==null)return;var d=this,$elem=$(d),targ=e,toff,attr={},win=$elem.is('html,body');switch(typeof targ){case'number':case'string':if(/^([+-]=)?\d+(\.\d+)?(px|%)?$/.test(targ)){targ=both(targ);break}targ=$(targ,this);if(!targ.length)return;case'object':if(targ.is||targ.style)toff=(targ=$(targ)).offset()}$.each(g.axis.split(''),function(i,a){var b=a=='x'?'Left':'Top',pos=b.toLowerCase(),key='scroll'+b,old=d[key],max=h.max(d,a);if(toff){attr[key]=toff[pos]+(win?0:old-$elem.offset()[pos]);if(g.margin){attr[key]-=parseInt(targ.css('margin'+b))||0;attr[key]-=parseInt(targ.css('border'+b+'Width'))||0}attr[key]+=g.offset[pos]||0;if(g.over[pos])attr[key]+=targ[a=='x'?'width':'height']()*g.over[pos]}else{var c=targ[pos];attr[key]=c.slice&&c.slice(-1)=='%'?parseFloat(c)/100*max:c}if(g.limit&&/^\d+$/.test(attr[key]))attr[key]=attr[key]<=0?0:Math.min(attr[key],max);if(!i&&g.queue){if(old!=attr[key])animate(g.onAfterFirst);delete attr[key]}});animate(g.onAfter);function animate(a){$elem.animate(attr,f,g.easing,a&&function(){a.call(this,e,g)})}}).end()};h.max=function(a,b){var c=b=='x'?'Width':'Height',scroll='scroll'+c;if(!$(a).is('html,body'))return a[scroll]-$(a)[c.toLowerCase()]();var d='client'+c,html=a.ownerDocument.documentElement,body=a.ownerDocument.body;return Math.max(html[scroll],body[scroll])-Math.min(html[d],body[d])};function both(a){return typeof a=='object'?a:{top:a,left:a}}})(jQuery);
-;var initialize, map, navigation, wHeight;
+;var fadeStart2, fadeUntil2, initialize, map, menuhide, menuhide2, menureveal, navigation, updateText, wHeight;
 
 wHeight = $(window).height();
 
 map = void 0;
 
 initialize = function() {
-  var mapOptions, marker;
+  var mapColors, mapOptions, marker;
+  mapColors = [
+    {
+      "stylers": [
+        {
+          "saturation": -100
+        }, {
+          "gamma": 0.8
+        }, {
+          "lightness": 4
+        }, {
+          "visibility": "on"
+        }
+      ]
+    }
+  ];
   mapOptions = {
     zoom: 15,
     center: new google.maps.LatLng(25.5496, -103.4464),
@@ -929,114 +944,10 @@ initialize = function() {
     },
     panControl: false,
     mapTypeControl: false,
-    streetViewControl: false
+    streetViewControl: false,
+    styles: mapColors
   };
   map = new google.maps.Map(document.getElementById("mapa"), mapOptions);
-  map.set("styles", [
-    {
-      elementType: "labels.text.fill",
-      stylers: [
-        {
-          color: "#765d3e"
-        }
-      ]
-    }, {
-      elementType: "labels.text.stroke",
-      stylers: [
-        {
-          color: "#edcf9d"
-        }
-      ]
-    }, {
-      featureType: "landscape",
-      elementType: "geometry.fill",
-      stylers: [
-        {
-          color: "#edcf9d"
-        }
-      ]
-    }, {
-      featureType: "administrative",
-      elementType: "geometry.fill",
-      stylers: [
-        {
-          color: "#edcf9d"
-        }
-      ]
-    }, {
-      featureType: "landscape.man_made",
-      elementType: "geometry.fill",
-      stylers: [
-        {
-          color: "#edcf9d"
-        }
-      ]
-    }, {
-      featureType: "poi",
-      elementType: "geometry",
-      stylers: [
-        {
-          color: "#edcf9d"
-        }
-      ]
-    }, {
-      featureType: "road",
-      elementType: "geometry",
-      stylers: [
-        {
-          color: "#af8b62"
-        }
-      ]
-    }, {
-      featureType: "road.arterial",
-      elementType: "geometry.stroke",
-      stylers: [
-        {
-          color: "#eccd9c"
-        }
-      ]
-    }, {
-      featureType: "road.local",
-      elementType: "geometry",
-      stylers: [
-        {
-          color: "#c6a377"
-        }
-      ]
-    }, {
-      featureType: "water",
-      elementType: "geometry.fill",
-      stylers: [
-        {
-          color: "#ffffff"
-        }
-      ]
-    }, {
-      featureType: "transit",
-      elementType: "geometry.fill",
-      stylers: [
-        {
-          color: "#af8b62"
-        }
-      ]
-    }, {
-      featureType: "administrative.province",
-      elementType: "geometry",
-      stylers: [
-        {
-          color: "#af8b62"
-        }
-      ]
-    }, {
-      featureType: "administrative.country",
-      elementType: "geometry",
-      stylers: [
-        {
-          color: "#af8b62"
-        }
-      ]
-    }
-  ]);
   return marker = new google.maps.Marker({
     position: new google.maps.LatLng(25.5496, -103.4464),
     map: map,
@@ -1055,7 +966,78 @@ navigation = function(currentSection) {
   });
 };
 
+fadeStart2 = 100;
+
+fadeUntil2 = 400;
+
+menureveal = function() {
+  $('.main_nav_menu').fadeIn(250);
+  $('.nav_icon').hide();
+  return $('.nav_close').show();
+};
+
+menuhide = function() {
+  $('.main_nav_menu').fadeOut(250);
+  $('.nav_icon').show();
+  return $('.nav_close').hide();
+};
+
+menuhide2 = function() {
+  $('.main_nav_menu').hide();
+  $('.nav_icon').show();
+  return $('.nav_close').hide();
+};
+
+updateText = function(event) {
+  var input;
+  input = $(this);
+  return setTimeout(function() {
+    var val;
+    val = input.val();
+    if (val !== "") {
+      return input.parent().addClass("floating-placeholder-float");
+    } else {
+      return input.parent().removeClass("floating-placeholder-float");
+    }
+  }, 1);
+};
+
 $(function() {
+  $(".floating-placeholder input").keydown(updateText);
+  $(".floating-placeholder input").change(updateText);
+  $(".nav_icon").on("click", function(e) {
+    e.preventDefault();
+    return menureveal();
+  });
+  $(".nav_close").on("click", function(e) {
+    e.preventDefault();
+    return menuhide();
+  });
+  $(document).scroll(function() {
+    var offset2, opacity2;
+    offset2 = $(window).scrollTop();
+    if (offset2 <= fadeStart2) {
+      $(".main_nav").css({
+        opacity: 0
+      });
+    }
+    if (offset2 <= fadeUntil2) {
+      opacity2 = 0 + offset2 / fadeUntil2;
+      $(".main_nav").css({
+        opacity: opacity2
+      });
+      return $(".main_nav_menu").css({
+        opacity: opacity2
+      });
+    } else if (offset2 > fadeUntil2) {
+      $(".main_nav").css({
+        opacity: 1
+      });
+      return $(".main_nav_menu").css({
+        opacity: 1
+      });
+    }
+  });
   return $(".scrollTo").on("click", function(e) {
     e.preventDefault();
     return navigation($(this));

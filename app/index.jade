@@ -15,7 +15,30 @@ html(ng-app="enso")
     
     link(href='http://fonts.googleapis.com/css?family=PT+Sans:400,700', rel='stylesheet')
   body
-    
+    .main_nav
+      .nav_logo
+        a(href="/")
+          img(src="img/menu/logo_small.png", alt="", width="40", height="39")
+      .nav_icon
+        a(href="#")
+          img(src="img/menu/menu.svg", alt="", width="41", height="40")
+      .nav_close
+        a(href="#")
+          img(src="img/menu/close.svg", alt="", width="36", height="40")
+    .main_nav_menu
+      .menu_item
+        a.scrollTo(href="#intro") INICIO 
+      .menu_item
+        a.scrollTo(href="#paneles") NOSOTROS 
+      .menu_item
+        a.scrollTo(href="#productos") PRODUCTOS 
+      .menu_item
+        a.scrollTo(href="#ahorro") AHORRA 
+      .menu_item
+        a.scrollTo(href="#map") UBICACIÓN 
+      .menu_item
+        a.scrollTo(href="#contactanos") CONTACTO  
+      
     .section#intro
       .bg
       .logo
@@ -23,51 +46,110 @@ html(ng-app="enso")
           img(src="img/logo2.png", alt="")
         p
           | ENERGIA SOLAR
-      a.goDown.scrollTo(href="#panelesBg")
+      a.goDown.scrollTo(href="#paneles")
     .section#paneles
       .wrap
         p.title
-          | PANELES SOLARES
+          | NOSOTROS
+        hr
         p.paragraph
-          | Sistemas de generación de electricidad con paneles solares para casas, comercios e industria (Sistemas Eléctricos Fotovoltaicos).
+          | Enso Energía es una empresa mexicana fundada en la ciudad de Torreón Coahuila en el año 2013. Nos dedicamos a la comercialización e instalación de sistemas de generación de energía renovable, principalmente a través de la energía solar. Somos especialistas en proyectos de generación de energía eléctrica a través de paneles solares (energía solar fotovoltaica) y en el diseño y comercialización de equipos de calentamiento solar de agua (energía solar térmica).
 
     .section#panelesBg
       .bg
       .wrap
+        //- p.title
+        //-   | PÁNELES SOLARES
+        //- hr
+        //- p.paragraph
+        //-   | Sistemas de generación de electricidad con paneles solares para casas, comercios e industria (Sistemas Eléctricos Fotovoltaicos).
+      
+
+    .section#productos
+      .wrap
         p.title
-          | PANELES SOLARES
-        p.paragraph
-          | Sistemas de generación de electricidad con paneles solares para casas, comercios e industria (Sistemas Eléctricos Fotovoltaicos).
-      a.goUp.scrollTo(href="#intro")
-      a.goDown.scrollTo(href="#calentadores")
+          | PRODUCTOS
+        hr
+        
+        .services_sect1
+          img(src='img/menu/menu_v2_01.png', height="92")
+          h3 PÁNELES
+          p.paragraph
+            | Sistemas de generación de electricidad con paneles solares para casas, comercios e industria (Sistemas Eléctricos Fotovoltaicos).
+        .services_sect2
+          img(src='img/menu/menu_v2_03.png', height="92")
+          h3 CALENTADORES
+          p.paragraph
+            | Calentadores solares de agua para casas (boilers solares), comercios e industria (Sistemas Termo Solares).
     
     .section#calentadores
       .bg
       .wrap
-        p.title
-          | CALENTADORES SOLARES
-        p.paragraph
-          | Calentadores solares de agua para casas (boilers solares), comercios e industria (Sistemas Termo Solares).
+        //- p.title
+        //-   | CALENTADORES SOLARES
+        //- hr
+        //- p.paragraph
+        //-   | Calentadores solares de agua para casas (boilers solares), comercios e industria (Sistemas Termo Solares).
 
-      a.goUp.scrollTo(href="#panelesBg")
-      a.goDown.scrollTo(href="#cotizador")
+      //- a.goUp.scrollTo(href="#panelesBg")
+      //- a.goDown.scrollTo(href="#ahorro")
     
-    .section#cotizador
-      .bg
+    .section#ahorro
       .wrap
         p.title
           | CALCULA TU AHORRO
+        hr
         p.paragraph
-          | Calcula el ahorro que podrías tener con un sistema de energía solar.
-      a.goUp.scrollTo(href="#calentadores")
-      a.goDown.scrollTo(href="#map")
+          | Calcula el ahorro que podrías tener con un sistema de energía solar. Consulta tu consumo diario en tu recibo de luz.
+        form(name="projectplanner", method="post", id="projectplanner", action="php/submit.php")
+          div(class="floating-placeholder")
+            input(id="name", name="name", type="text")
+            label(for="name")
+              | Nombre / Compañía
+          div(class="floating-placeholder")
+            input(id="phone", name="phone", type="integer")
+            label(for="phone")
+              | Teléfono
+          div(class="floating-placeholder")
+            input(id="email", name="email", type="text")
+            label(for="email")
+              | Email
+          div(class="floating-placeholder")
+            input(id="city", name="city", type="text")
+            label(for="city")
+              | Ciudad
+          div(class="floating-placeholder")
+            input(id="consumo", name="consumo", type="text")
+            label(for="consumo")
+              | Consumo diario kW/h
+          
+        div(style='padding-top: 20px;')
+          center
+            .send_btn
+              a(href="javascript:document.getElementById('projectplanner').submit();") ENVIAR
+      
+      
     .section#map
       #mapa
+    .section#ubicacion
       .wrap
         p.title
           | UBICACIÓN
+        hr
         p.paragraph
           | Blvd. Independencia #123 Ote. Local 2 <br> C.P. 27140 <br> Torreón, Coah. México.
+    .section#contactanos
+      .bg
+      .wrap
+        p.title
+          | CONTACTO
+        hr
+        p.paragraph
+        
+   
+          
+    
+      
       
       
 
