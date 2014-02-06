@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html ng-app="enso">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>enso</title>
+    <link rel="favicon.ico" href="favicon.ico">
+    <link rel="stylesheet" href="/css/app.css">
+    <script type="text/javascript">
+      window.brunch = window.brunch || {}
+      window.brunch['auto-reload'] = {enabled: true}
+    </script>
+    <script src="/js/vendor.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBprIiRqwGjuc69d-tvNpCY5kptKBALh8E&amp;sensor=false"></script>
+    <script src="/js/app.js"></script>
+    <link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+  </head>
+  <body>
+    <div id="intro" class="section">
+      <div class="bg"></div>
+      <div class="logo">
+        <div class="img"><img src="img/logo2.png" alt=""></div>
+        <p>ENERGIA SOLAR</p>
+      </div><a href="#panelesBg" class="goDown scrollTo"></a>
+    </div>
+    <div id="paneles" class="section">
+      <div class="wrap">
+        <p class="title">PANELES SOLARES</p>
+        <p class="paragraph">Sistemas de generación de electricidad con paneles solares para casas, comercios e industria (Sistemas Eléctricos Fotovoltaicos).</p>
+      </div>
+    </div>
+    <div id="panelesBg" class="section">
+      <div class="bg"></div>
+      <div class="wrap">
+        <p class="title">PANELES SOLARES</p>
+        <p class="paragraph">Sistemas de generación de electricidad con paneles solares para casas, comercios e industria (Sistemas Eléctricos Fotovoltaicos).</p>
+      </div><a href="#intro" class="goUp scrollTo"></a><a href="#calentadores" class="goDown scrollTo"></a>
+    </div>
+    <div id="calentadores" class="section">
+      <div class="bg"></div>
+      <div class="wrap">
+        <p class="title">CALENTADORES SOLARES</p>
+        <p class="paragraph">Calentadores solares de agua para casas (boilers solares), comercios e industria (Sistemas Termo Solares).</p>
+      </div><a href="#panelesBg" class="goUp scrollTo"></a><a href="#cotizador" class="goDown scrollTo"></a>
+    </div>
+    <div id="cotizador" class="section">
+      <div class="bg"></div>
+      <div class="wrap">
+        <p class="title">CALCULA TU AHORRO</p>
+        <p class="paragraph">Calcula el ahorro que podrías tener con un sistema de energía solar.</p>
+      </div><a href="#calentadores" class="goUp scrollTo"></a><a href="#map" class="goDown scrollTo"></a>
+    </div>
+    <div id="map" class="section">
+      <div id="mapa"></div>
+      <div class="wrap">
+        <p class="title">UBICACIÓN</p>
+        <p class="paragraph">Blvd. Independencia #123 Ote. Local 2 <br> C.P. 27140 <br> Torreón, Coah. México.</p>
+      </div>
+    </div>
+  </body>
+  <!--
+  script(src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js')
+  script(src='js/jquery.color.js')
+  script(src='js/jquery.scrollTo.min.js')
+  script(src='js/jquery.localscroll.min.js')
+  script(src='js/easing.js')
+  script(src='js/skrollr.js')
+  script(src='js/main.js')
+  -->
+</html>

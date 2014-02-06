@@ -1,0 +1,276 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+ * v2.0 | 20110126
+ * License: none (public domain) */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gamanox\/www\/ensoenergia\/app\/styles\/_reset\.sass}line{font-family:\000035}}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gamanox\/www\/ensoenergia\/app\/styles\/_reset\.sass}line{font-family:\0000326}}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gamanox\/www\/ensoenergia\/app\/styles\/_reset\.sass}line{font-family:\0000330}}
+body {
+  line-height: 1; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gamanox\/www\/ensoenergia\/app\/styles\/_reset\.sass}line{font-family:\0000333}}
+ol, ul {
+  list-style: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gamanox\/www\/ensoenergia\/app\/styles\/_reset\.sass}line{font-family:\0000336}}
+blockquote, q {
+  quotes: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gamanox\/www\/ensoenergia\/app\/styles\/_reset\.sass}line{font-family:\0000339}}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gamanox\/www\/ensoenergia\/app\/styles\/_reset\.sass}line{font-family:\0000344}}
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gamanox\/www\/ensoenergia\/app\/styles\/_reset\.sass}line{font-family:\0000348}}
+a {
+  text-decoration: none; }
+
+@font-face {
+  font-family: "Bold";
+  src: url("fonts/bold.woff") format("woff"); }
+
+@font-face {
+  font-family: "Regular";
+  src: url("fonts/regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "Light";
+  src: url("fonts/light.woff") format("woff"); }
+
+@font-face {
+  font-family: "Italic";
+  src: url("fonts/italic.woff") format("woff"); }
+
+@media -sass-debug-info{filename{}line{font-family:\000038}}
+p {
+  margin: 0;
+  padding: 0; }
+
+@media -sass-debug-info{filename{}line{font-family:\0000311}}
+html, body {
+  margin: 0;
+  padding: 0;
+  max-height: 100%;
+  width: 100%;
+  height: 100%;
+  min-width: 1100px; }
+
+@media -sass-debug-info{filename{}line{font-family:\0000319}}
+body {
+  display: block; }
+
+@media -sass-debug-info{filename{}line{font-family:\0000322}}
+.section {
+  height: 400px;
+  display: block;
+  position: relative;
+  width: 100%; }
+@media -sass-debug-info{filename{}line{font-family:\0000327}}
+  .section .goDown {
+    cursor: url(../img/down.cur), url(../img/down.png), pointer;
+    width: 100%;
+    height: 20%;
+    bottom: 0;
+    position: absolute;
+    z-index: 1;
+    left: 0; }
+@media -sass-debug-info{filename{}line{font-family:\0000335}}
+  .section .goUp {
+    cursor: url(../img/up.cur), url(../img/up.png), pointer;
+    width: 100%;
+    height: 20%;
+    top: 0;
+    position: absolute;
+    z-index: 1;
+    left: 0; }
+@media -sass-debug-info{filename{}line{font-family:\0000343}}
+  .section .wrap {
+    width: 700px;
+    padding: 40px 0px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative; }
+@media -sass-debug-info{filename{}line{font-family:\0000350}}
+    .section .wrap p.title {
+      font-family: "Bold";
+      font-size: 52px;
+      color: #3a4145;
+      margin-bottom: 30px; }
+@media -sass-debug-info{filename{}line{font-family:\0000354}}
+    .section .wrap p.paragraph {
+      font-family: "Regular";
+      font-size: 20px;
+      color: #3a4145;
+      text-align: left;
+      line-height: 32px; }
+
+@media -sass-debug-info{filename{}line{font-family:\0000358}}
+#paneles {
+  display: none; }
+
+@media -sass-debug-info{filename{}line{font-family:\0000361}}
+#intro {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: table;
+  box-sizing: border-box;
+  min-height: 240px;
+  padding: 15% 0;
+  height: 100%;
+  margin-bottom: 0rem; }
+@media -sass-debug-info{filename{}line{font-family:\0000372}}
+  #intro .bg {
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/back03.png");
+    background-size: cover;
+    background-position: 50% 50%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0; }
+@media -sass-debug-info{filename{}line{font-family:\0000383}}
+  #intro .logo {
+    display: table-cell;
+    vertical-align: middle;
+    width: 293px;
+    position: relative; }
+@media -sass-debug-info{filename{}line{font-family:\0000389}}
+    #intro .logo p {
+      margin-top: 18px;
+      font-family: "Light";
+      font-size: 14px;
+      color: white;
+      text-align: center;
+      letter-spacing: 14px; }
+
+@media -sass-debug-info{filename{}line{font-family:\0000396}}
+#panelesBg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: table;
+  box-sizing: border-box;
+  min-height: 240px;
+  padding: 15% 0;
+  height: 100%;
+  margin-bottom: 0rem; }
+@media -sass-debug-info{filename{}line{font-family:\00003107}}
+  #panelesBg .bg {
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/cells02.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0; }
+@media -sass-debug-info{filename{}line{font-family:\00003118}}
+  #panelesBg p {
+    color: white; }
+
+@media -sass-debug-info{filename{}line{font-family:\00003120}}
+#calentadores {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: table;
+  box-sizing: border-box;
+  min-height: 240px;
+  padding: 15% 0;
+  height: 100%;
+  margin-bottom: 0rem; }
+@media -sass-debug-info{filename{}line{font-family:\00003131}}
+  #calentadores .bg {
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/heater02.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0; }
+@media -sass-debug-info{filename{}line{font-family:\00003142}}
+  #calentadores p {
+    color: white; }
+
+@media -sass-debug-info{filename{}line{font-family:\00003144}}
+#cotizador {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: table;
+  box-sizing: border-box;
+  min-height: 240px;
+  padding: 15% 0;
+  height: 100%;
+  margin-bottom: 0rem; }
+@media -sass-debug-info{filename{}line{font-family:\00003155}}
+  #cotizador .bg {
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/medidor01.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0; }
+@media -sass-debug-info{filename{}line{font-family:\00003166}}
+  #cotizador p {
+    color: white; }
+
+@media -sass-debug-info{filename{}line{font-family:\00003170}}
+#map p {
+  color: white; }
+@media -sass-debug-info{filename{}line{font-family:\00003172}}
+#map .wrap {
+  pointer-events: none; }
+
+@media -sass-debug-info{filename{}line{font-family:\00003175}}
+#mapa {
+  height: 100%;
+  position: absolute !important;
+  width: 100%;
+  top: 0;
+  left: 0; }
+
+
+/*# sourceMappingURL=app.css.map*/

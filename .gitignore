@@ -14,7 +14,7 @@ results
 node_modules
 npm-debug.log
 
-_public
+# _public
 app/assets/*.html
 app/assets/**/*.html
 .DS_Store
