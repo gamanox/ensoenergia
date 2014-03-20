@@ -1,7 +1,7 @@
 /* http://meyerweb.com/eric/tools/css/reset/
  * v2.0 | 20110126
  * License: none (public domain) */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gamanox\/www\/ensoenergia\/app\/styles\/_reset\.sass}line{font-family:\000035}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gamanox\/sites\/ensoenergia\/app\/styles\/_reset\.sass}line{font-family:\000035}}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -23,35 +23,35 @@ time, mark, audio, video {
   vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gamanox\/www\/ensoenergia\/app\/styles\/_reset\.sass}line{font-family:\0000326}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gamanox\/sites\/ensoenergia\/app\/styles\/_reset\.sass}line{font-family:\0000326}}
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gamanox\/www\/ensoenergia\/app\/styles\/_reset\.sass}line{font-family:\0000330}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gamanox\/sites\/ensoenergia\/app\/styles\/_reset\.sass}line{font-family:\0000330}}
 body {
   line-height: 1; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gamanox\/www\/ensoenergia\/app\/styles\/_reset\.sass}line{font-family:\0000333}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gamanox\/sites\/ensoenergia\/app\/styles\/_reset\.sass}line{font-family:\0000333}}
 ol, ul {
   list-style: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gamanox\/www\/ensoenergia\/app\/styles\/_reset\.sass}line{font-family:\0000336}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gamanox\/sites\/ensoenergia\/app\/styles\/_reset\.sass}line{font-family:\0000336}}
 blockquote, q {
   quotes: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gamanox\/www\/ensoenergia\/app\/styles\/_reset\.sass}line{font-family:\0000339}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gamanox\/sites\/ensoenergia\/app\/styles\/_reset\.sass}line{font-family:\0000339}}
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: "";
   content: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gamanox\/www\/ensoenergia\/app\/styles\/_reset\.sass}line{font-family:\0000344}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gamanox\/sites\/ensoenergia\/app\/styles\/_reset\.sass}line{font-family:\0000344}}
 table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gamanox\/www\/ensoenergia\/app\/styles\/_reset\.sass}line{font-family:\0000348}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gamanox\/sites\/ensoenergia\/app\/styles\/_reset\.sass}line{font-family:\0000348}}
 a {
   text-decoration: none; }
 
