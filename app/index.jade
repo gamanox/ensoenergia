@@ -10,6 +10,7 @@ html(ng-app="enso")
         window.brunch = window.brunch || {}
         window.brunch['auto-reload'] = {enabled: true}
     script(src='/js/vendor.js')
+    script(src='https://www.google.com/jsapi')
     script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBprIiRqwGjuc69d-tvNpCY5kptKBALh8E&sensor=false')
     script(src='/js/app.js')
     
@@ -29,11 +30,17 @@ html(ng-app="enso")
       .menu_item
         a.scrollTo(href="#intro") INICIO 
       .menu_item
-        a.scrollTo(href="#paneles") NOSOTROS 
+        a.scrollTo(href="#nosotros") NOSOTROS 
       .menu_item
-        a.scrollTo(href="#productos") PRODUCTOS 
+        a.scrollTo(href="#paneles") PANELES 
+      .menu_item
+        a.scrollTo(href="#calentadores") BOILERS 
+      .menu_item
+        a.scrollTo(href="#albercas") ALBERCAS 
       .menu_item
         a.scrollTo(href="#ahorro") AHORRA 
+      .menu_item
+        a.scrollTo(href="#blog") NOTICIAS 
       .menu_item
         a.scrollTo(href="#map") UBICACIÓN 
       .menu_item
@@ -46,8 +53,8 @@ html(ng-app="enso")
           img(src="img/logo2.png", alt="")
         p
           | ENERGIA SOLAR
-      a.goDown.scrollTo(href="#paneles")
-    .section#paneles
+      a.goDown.scrollTo(href="#nosotros")
+    .section#nosotros
       .wrap
         p.title
           | NOSOTROS
@@ -63,26 +70,41 @@ html(ng-app="enso")
         //- hr
         //- p.paragraph
         //-   | Sistemas de generación de electricidad con paneles solares para casas, comercios e industria (Sistemas Eléctricos Fotovoltaicos).
-      
-
-    .section#productos
+    .section#paneles
       .wrap
         p.title
-          | PRODUCTOS
+          | PANELES SOLARES
         hr
         
         .services_sect1
           img(src='img/menu/menu_v2_01.png', height="92")
-          h3 PÁNELES
+          h3 Interconectados a la red de CFE
           p.paragraph
-            | Sistemas de generación de electricidad con paneles solares para casas, comercios e industria (Sistemas Eléctricos Fotovoltaicos).
+            | Estos sistemas no necesitan respaldo de baterías para almacenar la energía producida durante el día. La energía eléctrica producida por medio del sol, es interconectada a la red eléctrica de la compañía de luz, de esta manera, cuando es de noche o en días nublados, la compañía seguirá suministrando la electricidad necesaria en el hogar o negocio. Lo importante aquí, es cambiar mediante un sencillo trámite, el medidor convencional por uno llamado BIDIRECCIONAL, también suministrado por CFE. Con este medidor, la energía excedente que se produzca durante el día y que se va por la red, es contabilizada a favor del propietario del sistema, por lo que cada uno de los KWH producidos mediante el sol, son aprovechados.
         .services_sect2
-          img(src='img/menu/menu_v2_03.png', height="92")
-          h3 CALENTADORES
+          img(src='img/menu/menu_v2_01.png', height="92")
+          h3 Aislados o autónomos.
           p.paragraph
-            | Calentadores solares de agua para casas (boilers solares), comercios e industria (Sistemas Termo Solares).
+            | Estos sistemas son utilizados cuando no existe manera de conectar el sistema solar a la red de CFE. A diferencia de los interconectados, los sistemas autónomos requieren baterías de respaldo para almacenar la electricidad producida durante el día por medio del sol. Son ideales para ranchos, casas de campo, cabañas, etc. y para cualquier lugar donde se requiera electricidad y no haya acceso a la red de la compañía de luz.      
+
+    //- .section#productos
+    //-   .wrap
+    //-     p.title
+    //-       | PRODUCTOS
+    //-     hr
+        
+    //-     .services_sect1
+    //-       img(src='img/menu/menu_v2_01.png', height="92")
+    //-       h3 PÁNELES
+    //-       p.paragraph
+    //-         | Sistemas de generación de electricidad con paneles solares para casas, comercios e industria (Sistemas Eléctricos Fotovoltaicos).
+    //-     .services_sect2
+    //-       img(src='img/menu/menu_v2_03.png', height="92")
+    //-       h3 CALENTADORES
+    //-       p.paragraph
+    //-         | Calentadores solares de agua para casas (boilers solares), comercios e industria (Sistemas Termo Solares).
     
-    .section#calentadores
+    .section#calentadoresBg
       .bg
       .wrap
         //- p.title
@@ -94,6 +116,44 @@ html(ng-app="enso")
       //- a.goUp.scrollTo(href="#panelesBg")
       //- a.goDown.scrollTo(href="#ahorro")
     
+    .section#calentadores
+      .wrap
+        p.title
+          | BOILERS SOLARES
+        hr
+        
+        .services_sect1
+          img(src='img/menu/menu_v2_03.png', height="92")
+          h3 Línea CH
+          p.paragraph
+            | La línea CH cuenta con tanque exterior, estructura y reflectores en acero inoxidable. El tanque interior es de acero de titanio porcenalizado. Su característica más destacable, es que no requiere que haya un boiler de gas o eléctrico de respaldo, ya que cuenta en su tanque interno con una resistencia eléctrica que calienta el agua por medio de electricidad cuando es necesario. Esta resistencia es controlada por medio de un panel digital que se programa de manera automática o se controla manualmente para que nunca falta agua caliente en el hogar.
+        .services_sect2
+          img(src='img/menu/menu_v2_03.png', height="92")
+          h3 Línea EH
+          p.paragraph
+            | La línea EH se recomienda cuando ya existe un boiler de gas o eléctrico de respaldo. Cuenta con tanque exterior y estructura de acero de zinc galvanizado. El tanque interior es de acero inoxidable 304- 2B (grado alimenticio). 
+    .section#albercasBg
+      .bg
+      .wrap
+    .section#albercas
+      .wrap
+        p.title
+          | ALBERCAS
+        hr
+        
+        .services_sect1
+          img(src='img/menu/menu_v2_03.png', height="92")
+          h3 Albercas Climatizadas
+          p.paragraph
+            | Los calentadores solares de polipropileno UV con protección Sun Guard, son piezas diseñadas y fabricadas bajo altos estándares de calidad con tecnología de punta y desarrollo de materiales para sistemas de calentamiento de agua a través del aprovechamiento de los rayos solares.
+        .services_sect2
+          img(src='img/menu/menu_v2_03.png', height="92")
+          h3 Calentamiento de agua gran escala
+          p.paragraph
+            | Nuestros sistemas solares a gran escala, están diseñados para calentar grandes volúmenes de agua para comercios o industrias que le requieran. Son diseñados a la medida de las necesidades y son ideales para clubes deportivos, granjas avícolas, establos lecheros, hoteles, tortillerías, restaurantes, etc.  
+    .section#contactoBg
+      .bg
+      .wrap
     .section#ahorro
       .wrap
         p.title
@@ -125,10 +185,27 @@ html(ng-app="enso")
           
         div(style='padding-top: 20px;')
           center
+            .send_btn.files
+              a(href="") SUBIR RECIBO
+              input(id="fileupload", type="file", name="files[]", data-url="server/php/", multiple)
             .send_btn
               a(href="javascript:document.getElementById('projectplanner').submit();") ENVIAR
       
-      
+    .section#blogBg
+      .bg
+      .wrap
+    .section#blog
+      .wrap
+        p.title
+          | NOTICIAS
+        hr
+       .postsCont
+        .left
+        .right
+        #posts
+          .post
+
+
     .section#map
       #mapa
     .section#ubicacion
@@ -137,14 +214,18 @@ html(ng-app="enso")
           | UBICACIÓN
         hr
         p.paragraph
-          | Blvd. Independencia #123 Ote. Local 2 <br> C.P. 27140 <br> Torreón, Coah. México.
+          | Blvd. Independencia #123 Ote. Local 2 <br> C.P. 27140 <br> Torreón, Coah. México.<br> Teléfono: 871 7 13 86 42
     .section#contactanos
       .bg
       .wrap
         p.title
           | CONTACTO
         hr
-        p.paragraph
+        .socialCont
+          .social
+            a.fb(target="_blank", href="https://www.facebook.com/pages/ENSO-Energ%C3%ADa-Solar/515080675254619")
+            a.tw(target="_blank", href="https://twitter.com/ENSOenergia")
+            a.mail(target="_blank", href="http://ensoenergia.com/mailto:contacto@ensoenergia.com")
         
    
           
