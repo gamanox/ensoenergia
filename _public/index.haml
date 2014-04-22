@@ -1,0 +1,117 @@
+!!!
+%html
+	%head
+		%link{:rel => "stylesheet", :href => "css/style.css"}/
+		%link{:rel => "stylesheet", :href => "http://fonts.googleapis.com/css?family=PT+Sans:400,700"}/
+
+
+	%body
+
+		.header
+			%a.logo.scrollTo{:href => "#intro"}
+			.socialMenu
+				%a.element.fb{:href=>"https://www.facebook.com/pages/ENSO-Energ%C3%ADa-Solar/515080675254619", :target=>"_blank"}
+					%p
+						FACEBOOK
+
+				.element.tw
+					%p
+						TWITTER
+
+				.element.in
+					%p
+						INSTAGRAM
+
+				%a.element.map.scrollTo{:href=>"#map", :bgcolor=>""}
+					%p
+						UBICACIÓN
+				.element.tel
+					%p
+						871 713-8642
+				%a.element.mail{:href=>"mailto:contacto@ensoenergia.com", :target=>"_blank"}
+					%p
+						E-MAIL
+
+			/ .borderB
+			.solid
+		.container#mainCont
+			.menuMain
+				.link.menu01.scrollTo.productos{:href=>"#productos", :bgcolor=>"#f9a735"}
+				.link.menu02.scrollTo.cotizador{:href=>"#cotizador", :bgcolor=>"#11bf90"}
+				.link.menu03.scrollTo.blog{:href=>"#blog", :bgcolor=>"#f6d024"}
+				.link.menu04.scrollTo.proyectos{:href=>"#proyectos"}
+				.link.menu05.scrollTo.contacto{:href=>"#contacto", :bgcolor=>"#cdcdcc"}
+			.bgshadow
+			#intro.seccion
+				.introCont.seccionCont
+					%p.tituloSeccion
+						Energía Solar
+					%p.descripcion
+						Empresa mexicana fundada en la ciudad de Torreón Coahuila en el año 2013.
+			#productos.seccion
+				.productosCont.seccionCont
+					%p.tituloSeccion
+						Próximamente
+			#cotizador.seccion
+				.cotizadorCont.seccionCont
+					%p.tituloSeccion
+						Próximamente
+			#blog.seccion
+				.blogCont.seccionCont
+					%p.tituloSeccion
+						Próximamente
+			#proyectos.seccion
+				.proyectosCont.seccionCont
+					%p.tituloSeccion
+						Próximamente
+			#contacto.seccion
+
+				.contactoCont.seccionCont
+					%p.tituloSeccion
+						Contáctanos
+					.izqCont
+						%p.descripCont
+							Puedes contactarnos directamente o llenar la forma con tus preguntas o inquietudes y nosotros te responderemos inmediatamente.
+					.derCont
+						.campo
+							%input.inputContacto{:type => "text", :name=>"nombre"}/
+							%p.campoTexto
+								Nómbre
+						.campo
+							%input.inputContacto{:type => "email", :name=>"email"}/
+							%p.campoTexto
+								E-mail
+						.campo
+							%input.inputContacto{:type => "tel", :name=>"telefono"}/
+							%p.campoTexto
+								Teléfono
+						.campo
+							%input.inputContacto{:type => "text", :name=>"compania"}/
+							%p.campoTexto
+								Compañia
+						.campo.textfield
+							%textarea.inputContacto.inputComent{:name=>"comentario"}
+							%p.campoTexto
+								Comentario
+						%a.enviar{:href=>"#"}
+							%p
+								Enviar
+
+
+
+			#map.seccion
+				#mapa
+				.address
+
+		.footer
+			.borderT
+
+	%script{:src=>"//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"}
+	%script{:src=>"js/jquery.color.js"}
+	%script{:src=>"https://maps.googleapis.com/maps/api/js?key=AIzaSyBprIiRqwGjuc69d-tvNpCY5kptKBALh8E&sensor=false"}
+
+	%script{:src=>"js/jquery.scrollTo.min.js"}
+	%script{:src=>"js/jquery.localscroll.min.js"}
+	%script{:src=>"js/easing.js"}
+	%script{:src=>"js/skrollr.js"}
+	%script{:src=>"js/main.js"}

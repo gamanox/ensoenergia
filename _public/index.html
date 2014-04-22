@@ -13,8 +13,10 @@
     <script src="/js/vendor.js"></script>
     <script src="https://www.google.com/jsapi"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBprIiRqwGjuc69d-tvNpCY5kptKBALh8E&amp;sensor=false"></script>
+     <script type="text/javascript" src="http://www.google.com/jsapi"></script>
     <script src="/js/app.js"></script>
     <link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+    
   </head>
   <body>
     <div class="main_nav">
@@ -75,6 +77,7 @@
       <div class="wrap">
         <p class="title">BOILERS SOLARES</p>
         <hr>
+        
         <div class="services_sect1"><img src="img/menu/menu_v2_03.png" height="92">
           <h3>Línea CH</h3>
           <p class="paragraph">La línea CH cuenta con tanque exterior, estructura y reflectores en acero inoxidable. El tanque interior es de acero de titanio porcenalizado. Su característica más destacable, es que no requiere que haya un boiler de gas o eléctrico de respaldo, ya que cuenta en su tanque interno con una resistencia eléctrica que calienta el agua por medio de electricidad cuando es necesario. Esta resistencia es controlada por medio de un panel digital que se programa de manera automática o se controla manualmente para que nunca falta agua caliente en el hogar.</p>
@@ -93,6 +96,11 @@
       <div class="wrap">
         <p class="title">ALBERCAS</p>
         <hr>
+
+        <div class="diagrama">
+          <img src="img/albercas.jpg" alt="">
+            <img src="img/calentador.jpg" alt="">
+        </div>
         <div class="services_sect1"><img src="img/menu/menu_v2_03.png" height="92">
           <h3>Albercas Climatizadas</h3>
           <p class="paragraph">Los calentadores solares de polipropileno UV con protección Sun Guard, son piezas diseñadas y fabricadas bajo altos estándares de calidad con tecnología de punta y desarrollo de materiales para sistemas de calentamiento de agua a través del aprovechamiento de los rayos solares.</p>
@@ -112,7 +120,7 @@
         <p class="title">CALCULA TU AHORRO</p>
         <hr>
         <p class="paragraph">Calcula el ahorro que podrías tener con un sistema de energía solar. Consulta tu consumo diario en tu recibo de luz.</p>
-        <form name="projectplanner" method="post" id="projectplanner" action="php/submit.php">
+        <form name="projectplanner" method="post" id="projectplanner" enctype="multipart/form-data">
           <div class="floating-placeholder">
             <input id="name" name="name" type="text">
             <label for="name">Nombre / Compañía</label>
@@ -133,16 +141,18 @@
             <input id="consumo" name="consumo" type="text">
             <label for="consumo">Consumo diario kW/h</label>
           </div>
-        </form>
+        
         <div style="padding-top: 20px;">
           <center>
             <div class="send_btn files"><a href="">SUBIR RECIBO</a>
-              <input id="fileupload" type="file" name="files[]" data-url="server/php/" multiple>
+              <input id="file" type="file" name="file">
             </div>
-            <div class="send_btn"><a href="javascript:document.getElementById('projectplanner').submit();">ENVIAR</a></div>
+            
+            <div class="send_btn"><a href="javascript:sendForm();">ENVIAR</a></div>
           </center>
         </div>
       </div>
+      </form>
     </div>
     <div id="blogBg" class="section">
       <div class="bg"></div>
@@ -152,6 +162,25 @@
       <div class="wrap">
         <p class="title">NOTICIAS</p>
         <hr>
+        <div class="post">
+          <p class="fecha">24 Mar</p>
+          <p class="title">Según la ONU, el cambio climatico originará guerras.</p>
+          <p class="contenido">
+            Un informe filtrado advierte que el calentamiento global costará billones de dólares a las economías del mundo, lo que provocará violentos conflictos y desplazará a millones de personas para finales de este siglo, sobre todo en Asia. <br><br>
+
+ El diario británico ‘The Independent’ basándose en el borrador del reporte al que tuvo acceso indica que el incremento de las temperaturas globales promedias en 2,5ºC por encima de los niveles preindustriales puede dar lugar a pérdidas económicas agregadas globales de entre 0,2% y 2% del PIB mundial, lo que equivale a billones de dólares.<br><br>
+
+El documento es el segundo de los tres informes programados por el Panel Intergubernamental del Cambio Climático de la ONU, la investigación más detallada jamás emprendida sobre los efectos del fenómeno con la participación de centenares de expertos de todo el mundo. La versión final será presentada al público oficialmente a finales de este mes de marzo.<br><br>
+
+Se detalla que el calentamiento global afectará la salud humana, por lo que se incrementará drásticamente el número de olas de calor intenso e incendios, lo que elevará el riesgo de enfermedades originadas en el agua potable y los alimentos, además del asma y la rinitis alérgica.<br><br>
+
+Por su parte, los precios de los alimentos seguirán aumentando. Desde la actualidad y hasta finales del siglo XXI el promedio de cosechas se reducirá en un 2% cada década, mientras que hasta el año 2050 la demanda de alimentos crecerá cada diez años en un 14%. Todos estos factores contribuirán a que dentro de los próximos 35 años el número de niños desnutridos menores de 5 años aumente en 20-25 millones de personas.<br><br>
+
+El informe puntualiza que las zonas más afectadas por el cambio climático serán Asia oriental, Asia sudoriental y Asia del sur, donde el sumergimiento de tierras, las inundaciones y la erosión costeras consecuencia del deshielo y la consecuente subida del nivel del mar provocarán la pérdida de tierras bajas.<br><br>
+
+Acentúa que millones de personas tendrán que desplazarse, mientras que crecerá la rivalidad entre países por los recursos naturales. La consecuencia indirecta de ello será el aumento de las posibilidades de conflictos violentos, ya sea en forma de guerras civiles, violencia entre grupos de población o protestas violentas, exacerbando la pobreza y las crisis económicas.
+          </p>
+        </div>
       </div>
       <div class="postsCont">
         <div class="left"></div>
@@ -177,7 +206,7 @@
         <p class="title">CONTACTO</p>
         <hr>
         <div class="socialCont">
-          <div class="social"><a target="_blank" href="https://www.facebook.com/pages/ENSO-Energ%C3%ADa-Solar/515080675254619" class="fb"></a><a target="_blank" href="https://twitter.com/ENSOenergia" class="tw"></a><a target="_blank" href="http://ensoenergia.com/mailto:contacto@ensoenergia.com" class="mail"></a></div>
+          <div class="social"><a target="_blank" href="https://www.facebook.com/pages/ENSO-Energ%C3%ADa-Solar/515080675254619" class="fb"></a><a target="_blank" href="https://twitter.com/ENSOenergia" class="tw"></a><a target="_blank" href="mailto:contacto@ensoenergia.com" class="mail"></a></div>
         </div>
       </div>
     </div>

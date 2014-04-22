@@ -74,7 +74,8 @@ updateText = (event)->
 			input.parent().addClass "floating-placeholder-float"
 		else
 			input.parent().removeClass "floating-placeholder-float"
-	, 1  
+	, 1
+#
 
 
 $ ->
