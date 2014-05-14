@@ -3,7 +3,11 @@
 @import "fonts"
 @import "mixins"
 
-
+video
+	margin-top: 30px
+	margin-bottom: 30px
+	// display: none
+	
 
 p
 	margin: 0
@@ -161,8 +165,8 @@ body
 		height: 100%
 		background-image: url("../img/back03.png")
 		background-size: cover
-		background-position: 50% 50%
-		background-attachment: fixed
+		background-position: fixed
+		// background-attachment: fixed
 		background-repeat: no-repeat
 		position: absolute
 		top: 0
@@ -196,8 +200,8 @@ body
 		height: 100%
 		background-image: url("../img/cells02.jpg")
 		background-size: cover
-		background-position: 50% 50%
-		background-attachment: fixed
+		background-position: fixed
+		// background-attachment: fixed
 		background-repeat: no-repeat
 		position: absolute
 		top: 0
@@ -331,8 +335,8 @@ body
 		height: 100%
 		background-image: url("../img/albercasbg.jpg")
 		background-size: cover
-		background-position: 50% 50%
-		background-attachment: fixed
+		background-position: fixed
+		// background-attachment: fixed
 		background-repeat: no-repeat
 		position: absolute
 		top: 0
@@ -356,8 +360,8 @@ body
 		height: 100%
 		background-image: url("../img/back02.jpg")
 		background-size: cover
-		background-position: 50% 50%
-		background-attachment: fixed
+		background-position: fixed
+		// background-attachment: fixed
 		background-repeat: no-repeat
 		position: absolute
 		top: 0
@@ -414,8 +418,8 @@ body
 		height: 100%
 		background-image: url("../img/bg02.jpg")
 		background-size: cover
-		background-position: 50% 50%
-		background-attachment: fixed
+		background-position: fixed
+		// background-attachment: fixed
 		background-repeat: no-repeat
 		position: absolute
 		top: 0
@@ -439,8 +443,8 @@ body
 		height: 100%
 		background-image: url("../img/heater02.jpg")
 		background-size: cover
-		background-position: 50% 50%
-		background-attachment: fixed
+		background-position: fixed
+		// background-attachment: fixed
 		background-repeat: no-repeat
 		position: absolute
 		top: 0
@@ -463,8 +467,8 @@ body
 		height: 100%
 		background-image: url("../img/medidor01.jpg")
 		background-size: cover
-		background-position: 50% 50%
-		background-attachment: fixed
+		background-position: fixed
+		// background-attachment: fixed
 		background-repeat: no-repeat
 		position: absolute
 		top: 0
@@ -483,6 +487,8 @@ body
 			height: 24px
 
 			a
+				text-align: center
+				color: #fff
 				width: 24px
 				height: 24px
 				display: block
@@ -490,6 +496,7 @@ body
 				margin-left: 60px
 				background-repeat: no-repeat
 				background-position: 50% 50%
+
 				&:first-child
 					margin-left: 0
 
@@ -499,6 +506,11 @@ body
 					background-image: url("../img/tw.png")
 				&.mail
 					background-image: url("../img/mail.png")
+				&.correo
+					width: 100%
+					font-family: $regular
+					margin-top: 40px
+					
 				
 
 

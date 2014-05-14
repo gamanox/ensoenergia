@@ -67,7 +67,7 @@ $headers = "From: " . $email . "\r\n";
       $headers .= "MIME-Version: 1.0\r\n";
       $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 
-    mail("contacto@ensoenergia.com",$subject,$message,$headers);
+    mail("noxwill@gmail.com",$subject,$message,$headers);
 
 
 ?>

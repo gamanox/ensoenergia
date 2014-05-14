@@ -71,12 +71,17 @@ a {
   font-family: "Italic";
   src: url("fonts/italic.woff") format("woff"); }
 
-@media -sass-debug-info{filename{}line{font-family:\000038}}
+@media -sass-debug-info{filename{}line{font-family:\000036}}
+video {
+  margin-top: 30px;
+  margin-bottom: 30px; }
+
+@media -sass-debug-info{filename{}line{font-family:\0000312}}
 p {
   margin: 0;
   padding: 0; }
 
-@media -sass-debug-info{filename{}line{font-family:\0000311}}
+@media -sass-debug-info{filename{}line{font-family:\0000315}}
 html, body {
   margin: 0;
   padding: 0;
@@ -84,11 +89,11 @@ html, body {
   width: 100%;
   height: 100%; }
 
-@media -sass-debug-info{filename{}line{font-family:\0000319}}
+@media -sass-debug-info{filename{}line{font-family:\0000323}}
 body {
   display: block; }
 
-@media -sass-debug-info{filename{}line{font-family:\0000322}}
+@media -sass-debug-info{filename{}line{font-family:\0000326}}
 .main_nav {
   z-index: 999;
   position: fixed;
@@ -98,7 +103,7 @@ body {
   background-color: rgba(0, 0, 0, 0.74);
   opacity: 0;
   text-align: center; }
-@media -sass-debug-info{filename{}line{font-family:\0000331}}
+@media -sass-debug-info{filename{}line{font-family:\0000335}}
   .main_nav .nav_logo {
     margin-left: 0%;
     text-align: left;
@@ -106,7 +111,7 @@ body {
     float: left;
     padding-top: 20px;
     padding-left: 24px; }
-@media -sass-debug-info{filename{}line{font-family:\0000338}}
+@media -sass-debug-info{filename{}line{font-family:\0000342}}
   .main_nav .nav_icon {
     margin-right: 0%;
     text-align: right;
@@ -114,7 +119,7 @@ body {
     width: 25%;
     float: right;
     padding-right: 29px; }
-@media -sass-debug-info{filename{}line{font-family:\0000345}}
+@media -sass-debug-info{filename{}line{font-family:\0000349}}
   .main_nav .nav_close {
     margin-right: 0%;
     text-align: right;
@@ -124,7 +129,7 @@ body {
     padding-right: 29px;
     display: none; }
 
-@media -sass-debug-info{filename{}line{font-family:\0000354}}
+@media -sass-debug-info{filename{}line{font-family:\0000358}}
 .main_nav_menu {
   position: fixed;
   z-index: 999;
@@ -141,7 +146,7 @@ body {
   font-size: 26px;
   font-weight: 200;
   display: none; }
-@media -sass-debug-info{filename{}line{font-family:\0000371}}
+@media -sass-debug-info{filename{}line{font-family:\0000375}}
   .main_nav_menu .menu_item {
     width: 253px;
     height: 62px;
@@ -149,7 +154,7 @@ body {
     padding-right: 30px;
     background-color: rgba(0, 0, 0, 0);
     letter-spacing: 3px; }
-@media -sass-debug-info{filename{}line{font-family:\0000380}}
+@media -sass-debug-info{filename{}line{font-family:\0000384}}
     .main_nav_menu .menu_item a {
       text-align: right;
       text-decoration: none;
@@ -164,16 +169,16 @@ body {
       -ms-transition: background-color 0.22s ease-in-out;
       -o-transition: background-color 0.22s ease-in-out;
       transition: background-color 0.22s ease-in-out; }
-@media -sass-debug-info{filename{}line{font-family:\0000394}}
+@media -sass-debug-info{filename{}line{font-family:\0000398}}
       .main_nav_menu .menu_item a:hover {
         background-color: rgba(0, 0, 0, 0.7); }
 
-@media -sass-debug-info{filename{}line{font-family:\0000398}}
+@media -sass-debug-info{filename{}line{font-family:\00003102}}
 .section {
   display: block;
   position: relative;
   width: 100%; }
-@media -sass-debug-info{filename{}line{font-family:\00003103}}
+@media -sass-debug-info{filename{}line{font-family:\00003107}}
   .section .goDown {
     cursor: url(../img/down.cur), url(../img/down.png), pointer;
     width: 100%;
@@ -182,7 +187,7 @@ body {
     position: absolute;
     z-index: 1;
     left: 0; }
-@media -sass-debug-info{filename{}line{font-family:\00003111}}
+@media -sass-debug-info{filename{}line{font-family:\00003115}}
   .section .goUp {
     cursor: url(../img/up.cur), url(../img/up.png), pointer;
     width: 100%;
@@ -191,7 +196,7 @@ body {
     position: absolute;
     z-index: 1;
     left: 0; }
-@media -sass-debug-info{filename{}line{font-family:\00003119}}
+@media -sass-debug-info{filename{}line{font-family:\00003123}}
   .section .wrap {
     width: 90%;
     padding: 58px 0px;
@@ -199,7 +204,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     position: relative; }
-@media -sass-debug-info{filename{}line{font-family:\00003127}}
+@media -sass-debug-info{filename{}line{font-family:\00003131}}
     .section .wrap p.title {
       font-family: "Regular";
       font-size: 22px;
@@ -207,14 +212,14 @@ body {
       text-align: center;
       margin-bottom: 20px;
       letter-spacing: 4px; }
-@media -sass-debug-info{filename{}line{font-family:\00003132}}
+@media -sass-debug-info{filename{}line{font-family:\00003136}}
     .section .wrap hr {
       width: 100px;
       height: 2px;
       border: none;
       background-color: #fda817;
       margin-bottom: 68px; }
-@media -sass-debug-info{filename{}line{font-family:\00003140}}
+@media -sass-debug-info{filename{}line{font-family:\00003144}}
     .section .wrap p.paragraph {
       font-family: "Regular";
       font-size: 18px;
@@ -223,7 +228,7 @@ body {
       line-height: 40px;
       letter-spacing: 1px; }
 
-@media -sass-debug-info{filename{}line{font-family:\00003148}}
+@media -sass-debug-info{filename{}line{font-family:\00003152}}
 #intro {
   position: relative;
   width: 100%;
@@ -234,25 +239,24 @@ body {
   padding: 15% 0;
   height: 100%;
   margin-bottom: 0rem; }
-@media -sass-debug-info{filename{}line{font-family:\00003159}}
+@media -sass-debug-info{filename{}line{font-family:\00003163}}
   #intro .bg {
     width: 100%;
     height: 100%;
     background-image: url("../img/back03.png");
     background-size: cover;
-    background-position: 50% 50%;
-    background-attachment: fixed;
+    background-position: fixed;
     background-repeat: no-repeat;
     position: absolute;
     top: 0;
     left: 0; }
-@media -sass-debug-info{filename{}line{font-family:\00003170}}
+@media -sass-debug-info{filename{}line{font-family:\00003174}}
   #intro .logo {
     display: table-cell;
     vertical-align: middle;
     width: 293px;
     position: relative; }
-@media -sass-debug-info{filename{}line{font-family:\00003176}}
+@media -sass-debug-info{filename{}line{font-family:\00003180}}
     #intro .logo p {
       margin-top: 18px;
       font-family: "Light";
@@ -261,7 +265,7 @@ body {
       text-align: center;
       letter-spacing: 14px; }
 
-@media -sass-debug-info{filename{}line{font-family:\00003183}}
+@media -sass-debug-info{filename{}line{font-family:\00003187}}
 #panelesBg {
   position: relative;
   width: 100%;
@@ -272,23 +276,22 @@ body {
   padding: 15% 0;
   height: 100%;
   margin-bottom: 0rem; }
-@media -sass-debug-info{filename{}line{font-family:\00003194}}
+@media -sass-debug-info{filename{}line{font-family:\00003198}}
   #panelesBg .bg {
     width: 100%;
     height: 100%;
     background-image: url("../img/cells02.jpg");
     background-size: cover;
-    background-position: 50% 50%;
-    background-attachment: fixed;
+    background-position: fixed;
     background-repeat: no-repeat;
     position: absolute;
     top: 0;
     left: 0; }
-@media -sass-debug-info{filename{}line{font-family:\00003205}}
+@media -sass-debug-info{filename{}line{font-family:\00003209}}
   #panelesBg p {
     color: white; }
 
-@media -sass-debug-info{filename{}line{font-family:\00003208}}
+@media -sass-debug-info{filename{}line{font-family:\00003212}}
 #ahorro form {
   width: 100%;
   max-width: 800px;
@@ -297,23 +300,23 @@ body {
   font-weight: 300;
   margin-top: 60px;
   font-family: "Regular"; }
-@media -sass-debug-info{filename{}line{font-family:\00003217}}
+@media -sass-debug-info{filename{}line{font-family:\00003221}}
 #ahorro input, #ahorro .floating-placeholder {
   font-size: 19px;
   line-height: 62px;
   height: 80px;
   margin: 0;
   width: 100%; }
-@media -sass-debug-info{filename{}line{font-family:\00003223}}
+@media -sass-debug-info{filename{}line{font-family:\00003227}}
 #ahorro .floating-placeholder input:focus + label {
   color: #fda817; }
-@media -sass-debug-info{filename{}line{font-family:\00003225}}
+@media -sass-debug-info{filename{}line{font-family:\00003229}}
 #ahorro .floating-placeholder input[value] + label {
   color: red; }
-@media -sass-debug-info{filename{}line{font-family:\00003227}}
+@media -sass-debug-info{filename{}line{font-family:\00003231}}
 #ahorro .floating-placeholder {
   position: relative; }
-@media -sass-debug-info{filename{}line{font-family:\00003229}}
+@media -sass-debug-info{filename{}line{font-family:\00003233}}
 #ahorro .floating-placeholder input {
   font-size: 26px;
   letter-spacing: 1px;
@@ -330,10 +333,10 @@ body {
   text-indent: 20px;
   color: #3a4145;
   font-family: "Regular"; }
-@media -sass-debug-info{filename{}line{font-family:\00003245}}
+@media -sass-debug-info{filename{}line{font-family:\00003249}}
 #ahorro .floating-placeholder:last-child input {
   border-bottom: none; }
-@media -sass-debug-info{filename{}line{font-family:\00003247}}
+@media -sass-debug-info{filename{}line{font-family:\00003251}}
 #ahorro .floating-placeholder label {
   display: block;
   position: absolute;
@@ -357,17 +360,17 @@ body {
   -o-transform: scale(1, 1) rotateY(0);
   transform: scale(1, 1) rotateY(0);
   color: #888888; }
-@media -sass-debug-info{filename{}line{font-family:\00003272}}
+@media -sass-debug-info{filename{}line{font-family:\00003276}}
 #ahorro .floating-placeholder-float label {
   -webkit-transform: scale(0.6, 0.6) rotateY(0);
   -moz-transform: scale(0.55, 0.55) rotateY(0);
   -ms-transform: scale(0.55, 0.55) rotateY(0);
   -o-transform: scale(0.55, 0.55) rotateY(0);
   transform: scale(0.6, 0.6) rotateY(0); }
-@media -sass-debug-info{filename{}line{font-family:\00003278}}
+@media -sass-debug-info{filename{}line{font-family:\00003282}}
 #ahorro .floating-placeholder-float input {
   line-height: 3.4em; }
-@media -sass-debug-info{filename{}line{font-family:\00003281}}
+@media -sass-debug-info{filename{}line{font-family:\00003285}}
 #ahorro .send_btn {
   background-color: #fda817;
   color: white;
@@ -390,7 +393,7 @@ body {
   transition: opacity 0.22s ease-in-out;
   -webkit-backface-visibility: hidden;
   -webkit-transform: translateZ(0) scale(1, 1); }
-@media -sass-debug-info{filename{}line{font-family:\00003303}}
+@media -sass-debug-info{filename{}line{font-family:\00003307}}
   #ahorro .send_btn.files input {
     position: absolute;
     z-index: 1;
@@ -398,7 +401,7 @@ body {
     left: 0;
     cursor: pointer;
     opacity: 0; }
-@media -sass-debug-info{filename{}line{font-family:\00003310}}
+@media -sass-debug-info{filename{}line{font-family:\00003314}}
   #ahorro .send_btn a {
     text-decoration: none;
     color: white;
@@ -406,7 +409,7 @@ body {
     height: 100%;
     display: block; }
 
-@media -sass-debug-info{filename{}line{font-family:\00003317}}
+@media -sass-debug-info{filename{}line{font-family:\00003321}}
 #albercasBg {
   position: relative;
   width: 100%;
@@ -417,23 +420,22 @@ body {
   padding: 15% 0;
   height: 100%;
   margin-bottom: 0rem; }
-@media -sass-debug-info{filename{}line{font-family:\00003329}}
+@media -sass-debug-info{filename{}line{font-family:\00003333}}
   #albercasBg .bg {
     width: 100%;
     height: 100%;
     background-image: url("../img/albercasbg.jpg");
     background-size: cover;
-    background-position: 50% 50%;
-    background-attachment: fixed;
+    background-position: fixed;
     background-repeat: no-repeat;
     position: absolute;
     top: 0;
     left: 0; }
-@media -sass-debug-info{filename{}line{font-family:\00003340}}
+@media -sass-debug-info{filename{}line{font-family:\00003344}}
   #albercasBg p {
     color: white; }
 
-@media -sass-debug-info{filename{}line{font-family:\00003342}}
+@media -sass-debug-info{filename{}line{font-family:\00003346}}
 #contactoBg {
   position: relative;
   width: 100%;
@@ -444,30 +446,29 @@ body {
   padding: 15% 0;
   height: 100%;
   margin-bottom: 0rem; }
-@media -sass-debug-info{filename{}line{font-family:\00003354}}
+@media -sass-debug-info{filename{}line{font-family:\00003358}}
   #contactoBg .bg {
     width: 100%;
     height: 100%;
     background-image: url("../img/back02.jpg");
     background-size: cover;
-    background-position: 50% 50%;
-    background-attachment: fixed;
+    background-position: fixed;
     background-repeat: no-repeat;
     position: absolute;
     top: 0;
     left: 0; }
-@media -sass-debug-info{filename{}line{font-family:\00003365}}
+@media -sass-debug-info{filename{}line{font-family:\00003369}}
   #contactoBg p {
     color: white; }
 
-@media -sass-debug-info{filename{}line{font-family:\00003368}}
+@media -sass-debug-info{filename{}line{font-family:\00003372}}
 #blog .post {
   position: relative;
   width: 80%;
   height: auto;
   margin-left: auto;
   margin-right: auto; }
-@media -sass-debug-info{filename{}line{font-family:\00003374}}
+@media -sass-debug-info{filename{}line{font-family:\00003378}}
   #blog .post .fecha {
     position: absolute;
     right: 0;
@@ -477,7 +478,7 @@ body {
     letter-spacing: 2px;
     text-align: right;
     font-family: "Regular"; }
-@media -sass-debug-info{filename{}line{font-family:\00003383}}
+@media -sass-debug-info{filename{}line{font-family:\00003387}}
   #blog .post .title {
     text-align: left;
     margin-bottom: 35px;
@@ -485,7 +486,7 @@ body {
     font-weight: 400;
     letter-spacing: 2px;
     font-family: "Regular"; }
-@media -sass-debug-info{filename{}line{font-family:\00003391}}
+@media -sass-debug-info{filename{}line{font-family:\00003395}}
   #blog .post .contenido {
     text-align: justify;
     margin-bottom: 35px;
@@ -494,7 +495,7 @@ body {
     color: #3a4145;
     line-height: 26px; }
 
-@media -sass-debug-info{filename{}line{font-family:\00003400}}
+@media -sass-debug-info{filename{}line{font-family:\00003404}}
 #blogBg {
   position: relative;
   width: 100%;
@@ -505,23 +506,22 @@ body {
   padding: 15% 0;
   height: 100%;
   margin-bottom: 0rem; }
-@media -sass-debug-info{filename{}line{font-family:\00003412}}
+@media -sass-debug-info{filename{}line{font-family:\00003416}}
   #blogBg .bg {
     width: 100%;
     height: 100%;
     background-image: url("../img/bg02.jpg");
     background-size: cover;
-    background-position: 50% 50%;
-    background-attachment: fixed;
+    background-position: fixed;
     background-repeat: no-repeat;
     position: absolute;
     top: 0;
     left: 0; }
-@media -sass-debug-info{filename{}line{font-family:\00003423}}
+@media -sass-debug-info{filename{}line{font-family:\00003427}}
   #blogBg p {
     color: white; }
 
-@media -sass-debug-info{filename{}line{font-family:\00003425}}
+@media -sass-debug-info{filename{}line{font-family:\00003429}}
 #calentadoresBg {
   position: relative;
   width: 100%;
@@ -532,50 +532,50 @@ body {
   padding: 15% 0;
   height: 100%;
   margin-bottom: 0rem; }
-@media -sass-debug-info{filename{}line{font-family:\00003437}}
+@media -sass-debug-info{filename{}line{font-family:\00003441}}
   #calentadoresBg .bg {
     width: 100%;
     height: 100%;
     background-image: url("../img/heater02.jpg");
     background-size: cover;
-    background-position: 50% 50%;
-    background-attachment: fixed;
+    background-position: fixed;
     background-repeat: no-repeat;
     position: absolute;
     top: 0;
     left: 0; }
-@media -sass-debug-info{filename{}line{font-family:\00003448}}
+@media -sass-debug-info{filename{}line{font-family:\00003452}}
   #calentadoresBg p {
     color: white; }
 
-@media -sass-debug-info{filename{}line{font-family:\00003461}}
+@media -sass-debug-info{filename{}line{font-family:\00003465}}
 #contactanos .bg {
   width: 100%;
   height: 100%;
   background-image: url("../img/medidor01.jpg");
   background-size: cover;
-  background-position: 50% 50%;
-  background-attachment: fixed;
+  background-position: fixed;
   background-repeat: no-repeat;
   position: absolute;
   top: 0;
   left: 0; }
-@media -sass-debug-info{filename{}line{font-family:\00003472}}
+@media -sass-debug-info{filename{}line{font-family:\00003476}}
 #contactanos p {
   color: white; }
-@media -sass-debug-info{filename{}line{font-family:\00003475}}
+@media -sass-debug-info{filename{}line{font-family:\00003479}}
 #contactanos .socialCont {
   width: 100%;
   height: 24px;
   margin-top: 30px; }
-@media -sass-debug-info{filename{}line{font-family:\00003479}}
+@media -sass-debug-info{filename{}line{font-family:\00003483}}
   #contactanos .socialCont .social {
     width: 192px;
     margin-left: auto;
     margin-right: auto;
     height: 24px; }
-@media -sass-debug-info{filename{}line{font-family:\00003485}}
+@media -sass-debug-info{filename{}line{font-family:\00003489}}
     #contactanos .socialCont .social a {
+      text-align: center;
+      color: white;
       width: 24px;
       height: 24px;
       display: block;
@@ -583,31 +583,36 @@ body {
       margin-left: 60px;
       background-repeat: no-repeat;
       background-position: 50% 50%; }
-@media -sass-debug-info{filename{}line{font-family:\00003493}}
+@media -sass-debug-info{filename{}line{font-family:\00003500}}
       #contactanos .socialCont .social a:first-child {
         margin-left: 0; }
-@media -sass-debug-info{filename{}line{font-family:\00003496}}
+@media -sass-debug-info{filename{}line{font-family:\00003503}}
       #contactanos .socialCont .social a.fb {
         background-image: url("../img/fb.png"); }
-@media -sass-debug-info{filename{}line{font-family:\00003498}}
+@media -sass-debug-info{filename{}line{font-family:\00003505}}
       #contactanos .socialCont .social a.tw {
         background-image: url("../img/tw.png"); }
-@media -sass-debug-info{filename{}line{font-family:\00003500}}
+@media -sass-debug-info{filename{}line{font-family:\00003507}}
       #contactanos .socialCont .social a.mail {
         background-image: url("../img/mail.png"); }
+@media -sass-debug-info{filename{}line{font-family:\00003509}}
+      #contactanos .socialCont .social a.correo {
+        width: 100%;
+        font-family: "Regular";
+        margin-top: 40px; }
 
-@media -sass-debug-info{filename{}line{font-family:\00003505}}
+@media -sass-debug-info{filename{}line{font-family:\00003517}}
 #paneles {
   text-align: center;
   font-family: "Regular";
   color: #3a4145; }
-@media -sass-debug-info{filename{}line{font-family:\00003510}}
+@media -sass-debug-info{filename{}line{font-family:\00003522}}
   #paneles .wrap {
     overflow: auto; }
-@media -sass-debug-info{filename{}line{font-family:\00003512}}
+@media -sass-debug-info{filename{}line{font-family:\00003524}}
   #paneles .paragraph {
     margin-bottom: 30px; }
-@media -sass-debug-info{filename{}line{font-family:\00003514}}
+@media -sass-debug-info{filename{}line{font-family:\00003526}}
   #paneles .services_sect1 {
     position: relative;
     width: 49%;
@@ -619,13 +624,13 @@ body {
     float: left;
     margin-left: 0%;
     display: block; }
-@media -sass-debug-info{filename{}line{font-family:\00003526}}
+@media -sass-debug-info{filename{}line{font-family:\00003538}}
     #paneles .services_sect1 p {
       padding-left: 15px;
       padding-right: 15px;
       font-size: 16px;
       line-height: 26px; }
-@media -sass-debug-info{filename{}line{font-family:\00003532}}
+@media -sass-debug-info{filename{}line{font-family:\00003544}}
   #paneles .services_sect2 {
     position: relative;
     width: 50%;
@@ -635,16 +640,16 @@ body {
     float: left;
     margin-left: 0%;
     display: block; }
-@media -sass-debug-info{filename{}line{font-family:\00003541}}
+@media -sass-debug-info{filename{}line{font-family:\00003553}}
     #paneles .services_sect2 p {
       padding-left: 15px;
       padding-right: 15px;
       font-size: 16px;
       line-height: 26px; }
-@media -sass-debug-info{filename{}line{font-family:\00003547}}
+@media -sass-debug-info{filename{}line{font-family:\00003559}}
   #paneles img {
     padding-top: 18px; }
-@media -sass-debug-info{filename{}line{font-family:\00003549}}
+@media -sass-debug-info{filename{}line{font-family:\00003561}}
   #paneles h3 {
     font-size: 22px;
     font-weight: 400;
@@ -655,28 +660,28 @@ body {
     width: 100%;
     border-bottom: 1px solid #e0e0e0; }
 
-@media -sass-debug-info{filename{}line{font-family:\00003558}}
+@media -sass-debug-info{filename{}line{font-family:\00003570}}
 #albercas {
   text-align: center;
   font-family: "Regular";
   color: #3a4145; }
-@media -sass-debug-info{filename{}line{font-family:\00003563}}
+@media -sass-debug-info{filename{}line{font-family:\00003575}}
   #albercas .diagrama {
     width: 100%;
     height: auto;
     text-align: center;
     margin-bottom: 25px; }
-@media -sass-debug-info{filename{}line{font-family:\00003568}}
+@media -sass-debug-info{filename{}line{font-family:\00003580}}
     #albercas .diagrama img {
       margin-left: auto;
       margin-right: auto; }
-@media -sass-debug-info{filename{}line{font-family:\00003571}}
+@media -sass-debug-info{filename{}line{font-family:\00003583}}
   #albercas .wrap {
     overflow: auto; }
-@media -sass-debug-info{filename{}line{font-family:\00003573}}
+@media -sass-debug-info{filename{}line{font-family:\00003585}}
   #albercas .paragraph {
     margin-bottom: 30px; }
-@media -sass-debug-info{filename{}line{font-family:\00003575}}
+@media -sass-debug-info{filename{}line{font-family:\00003587}}
   #albercas .services_sect1 {
     position: relative;
     width: 49%;
@@ -688,13 +693,13 @@ body {
     float: left;
     margin-left: 0%;
     display: block; }
-@media -sass-debug-info{filename{}line{font-family:\00003587}}
+@media -sass-debug-info{filename{}line{font-family:\00003599}}
     #albercas .services_sect1 p {
       padding-left: 15px;
       padding-right: 15px;
       font-size: 16px;
       line-height: 26px; }
-@media -sass-debug-info{filename{}line{font-family:\00003593}}
+@media -sass-debug-info{filename{}line{font-family:\00003605}}
   #albercas .services_sect2 {
     position: relative;
     width: 50%;
@@ -704,16 +709,16 @@ body {
     float: left;
     margin-left: 0%;
     display: block; }
-@media -sass-debug-info{filename{}line{font-family:\00003602}}
+@media -sass-debug-info{filename{}line{font-family:\00003614}}
     #albercas .services_sect2 p {
       padding-left: 15px;
       padding-right: 15px;
       font-size: 16px;
       line-height: 26px; }
-@media -sass-debug-info{filename{}line{font-family:\00003608}}
+@media -sass-debug-info{filename{}line{font-family:\00003620}}
   #albercas img {
     padding-top: 18px; }
-@media -sass-debug-info{filename{}line{font-family:\00003610}}
+@media -sass-debug-info{filename{}line{font-family:\00003622}}
   #albercas h3 {
     font-size: 22px;
     font-weight: 400;
@@ -724,28 +729,28 @@ body {
     width: 100%;
     border-bottom: 1px solid #e0e0e0; }
 
-@media -sass-debug-info{filename{}line{font-family:\00003620}}
+@media -sass-debug-info{filename{}line{font-family:\00003632}}
 #calentadores {
   text-align: center;
   font-family: "Regular";
   color: #3a4145; }
-@media -sass-debug-info{filename{}line{font-family:\00003625}}
+@media -sass-debug-info{filename{}line{font-family:\00003637}}
   #calentadores .diagrama {
     width: 100%;
     height: auto;
     text-align: center;
     margin-bottom: 25px; }
-@media -sass-debug-info{filename{}line{font-family:\00003630}}
+@media -sass-debug-info{filename{}line{font-family:\00003642}}
     #calentadores .diagrama img {
       margin-left: auto;
       margin-right: auto; }
-@media -sass-debug-info{filename{}line{font-family:\00003633}}
+@media -sass-debug-info{filename{}line{font-family:\00003645}}
   #calentadores .wrap {
     overflow: auto; }
-@media -sass-debug-info{filename{}line{font-family:\00003635}}
+@media -sass-debug-info{filename{}line{font-family:\00003647}}
   #calentadores .paragraph {
     margin-bottom: 30px; }
-@media -sass-debug-info{filename{}line{font-family:\00003637}}
+@media -sass-debug-info{filename{}line{font-family:\00003649}}
   #calentadores .services_sect1 {
     position: relative;
     width: 49%;
@@ -757,13 +762,13 @@ body {
     float: left;
     margin-left: 0%;
     display: block; }
-@media -sass-debug-info{filename{}line{font-family:\00003649}}
+@media -sass-debug-info{filename{}line{font-family:\00003661}}
     #calentadores .services_sect1 p {
       padding-left: 15px;
       padding-right: 15px;
       font-size: 16px;
       line-height: 26px; }
-@media -sass-debug-info{filename{}line{font-family:\00003655}}
+@media -sass-debug-info{filename{}line{font-family:\00003667}}
   #calentadores .services_sect2 {
     position: relative;
     width: 50%;
@@ -773,16 +778,16 @@ body {
     float: left;
     margin-left: 0%;
     display: block; }
-@media -sass-debug-info{filename{}line{font-family:\00003664}}
+@media -sass-debug-info{filename{}line{font-family:\00003676}}
     #calentadores .services_sect2 p {
       padding-left: 15px;
       padding-right: 15px;
       font-size: 16px;
       line-height: 26px; }
-@media -sass-debug-info{filename{}line{font-family:\00003670}}
+@media -sass-debug-info{filename{}line{font-family:\00003682}}
   #calentadores img {
     padding-top: 18px; }
-@media -sass-debug-info{filename{}line{font-family:\00003672}}
+@media -sass-debug-info{filename{}line{font-family:\00003684}}
   #calentadores h3 {
     font-size: 22px;
     font-weight: 400;
@@ -793,18 +798,18 @@ body {
     width: 100%;
     border-bottom: 1px solid #e0e0e0; }
 
-@media -sass-debug-info{filename{}line{font-family:\00003683}}
+@media -sass-debug-info{filename{}line{font-family:\00003695}}
 #productos {
   text-align: center;
   font-family: "Regular";
   color: #3a4145; }
-@media -sass-debug-info{filename{}line{font-family:\00003688}}
+@media -sass-debug-info{filename{}line{font-family:\00003700}}
   #productos .wrap {
     overflow: auto; }
-@media -sass-debug-info{filename{}line{font-family:\00003690}}
+@media -sass-debug-info{filename{}line{font-family:\00003702}}
   #productos .paragraph {
     margin-bottom: 30px; }
-@media -sass-debug-info{filename{}line{font-family:\00003692}}
+@media -sass-debug-info{filename{}line{font-family:\00003704}}
   #productos .services_sect1 {
     position: relative;
     width: 49%;
@@ -816,12 +821,12 @@ body {
     float: left;
     margin-left: 0%;
     display: block; }
-@media -sass-debug-info{filename{}line{font-family:\00003704}}
+@media -sass-debug-info{filename{}line{font-family:\00003716}}
     #productos .services_sect1 p {
       padding-left: 15px;
       padding-right: 15px;
       font-size: 17px; }
-@media -sass-debug-info{filename{}line{font-family:\00003708}}
+@media -sass-debug-info{filename{}line{font-family:\00003720}}
   #productos .services_sect2 {
     position: relative;
     width: 50%;
@@ -831,15 +836,15 @@ body {
     float: left;
     margin-left: 0%;
     display: block; }
-@media -sass-debug-info{filename{}line{font-family:\00003717}}
+@media -sass-debug-info{filename{}line{font-family:\00003729}}
     #productos .services_sect2 p {
       padding-left: 15px;
       padding-right: 15px;
       font-size: 17px; }
-@media -sass-debug-info{filename{}line{font-family:\00003721}}
+@media -sass-debug-info{filename{}line{font-family:\00003733}}
   #productos img {
     padding-top: 18px; }
-@media -sass-debug-info{filename{}line{font-family:\00003723}}
+@media -sass-debug-info{filename{}line{font-family:\00003735}}
   #productos h3 {
     font-size: 22px;
     font-weight: 400;
@@ -850,17 +855,17 @@ body {
     width: 100%;
     border-bottom: 1px solid #e0e0e0; }
 
-@media -sass-debug-info{filename{}line{font-family:\00003736}}
+@media -sass-debug-info{filename{}line{font-family:\00003748}}
 #map {
   height: 400px; }
-@media -sass-debug-info{filename{}line{font-family:\00003738}}
+@media -sass-debug-info{filename{}line{font-family:\00003750}}
   #map p {
     color: white; }
-@media -sass-debug-info{filename{}line{font-family:\00003740}}
+@media -sass-debug-info{filename{}line{font-family:\00003752}}
   #map .wrap {
     pointer-events: none; }
 
-@media -sass-debug-info{filename{}line{font-family:\00003743}}
+@media -sass-debug-info{filename{}line{font-family:\00003755}}
 #mapa {
   height: 399px;
   position: absolute !important;

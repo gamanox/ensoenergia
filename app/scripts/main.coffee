@@ -76,9 +76,18 @@ updateText = (event)->
 			input.parent().removeClass "floating-placeholder-float"
 	, 1
 #
-
+sendForm = ->
+	formData = new FormData($("#projectplanner"))
+	$.ajax
+		type: "POST"
+		url: "upload_file.php"
+		data: formData
+		success: (data) ->
+			alert data
 
 $ ->
+
+
 
 
 	$(".floating-placeholder input").keydown(updateText)
