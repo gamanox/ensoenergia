@@ -3,16 +3,19 @@ Ensoenergia Website V03
 
 ## Requirements
 
-1. [Node][node] (`npm install -g scaffolt`)
+1. [Node][node]
+2. [Ruby][ruby]
+3. [Sass][sass] (`sudo gem install sass`)
 2. [Scaffolt][scaffolt] (`npm install -g scaffolt`)
 3. [Brunch][brunch] (`npm install -g brunch`)
 
 
 ## Usage
-
-1. Run server
+1. Install dependencys
+``npm install``
+2. Run server
 ``brunch w -s``
-2. Open Browser
+3. Open Browser
 ``localhost:3333``
 
 
@@ -55,3 +58,5 @@ Each extra is already configured in `config.coffee` (i.e. properly positioned du
 [scaffolt]: https://github.com/paulmillr/scaffolt
 [node]: http://node.org
 [brunch]: http://brunch.io
+[ruby]: https://gorails.com/setup/osx/10.9-mavericks
+[sass]: http://sass-lang.com/install
